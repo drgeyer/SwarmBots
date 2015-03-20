@@ -1,0 +1,2666 @@
+Archive member included because of file (symbol)
+
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+                              build/default/debug/_ext/1445226623/bsp.o (CheKseg0CacheOn)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                              build/default/debug/_ext/1445226623/crt0.o (_bootstrap_exception_handler)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                              build/default/debug/_ext/1445226623/crt0.o (_on_reset)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                              build/default/debug/_ext/1445226623/crt0.o (_on_bootstrap)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                              build/default/debug/_ext/1445226623/crt0.o (_nmi_handler)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+                              build/default/debug/_ext/2124147866/lib_str.o (fpdiv)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+                              build/default/debug/_ext/2124147866/lib_str.o (fpmul)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+                              build/default/debug/_ext/2124147866/lib_str.o (fpcmp)
+c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+                              build/default/debug/_ext/2124147866/lib_str.o (fptoui)
+
+Allocating common symbols
+Common symbol       size              file
+
+OS_AppTaskDelHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+OSCfg_MsgPool       0x640             build/default/debug/_ext/284751068/os_cfg_app.o
+OSTmrUpdateCnt      0x4               build/default/debug/_ext/284751068/os_var.o
+OS_AppTimeTickHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+OSTickCtr           0x4               build/default/debug/_ext/284751068/os_var.o
+OSTmrTaskTimeMax    0x4               build/default/debug/_ext/284751068/os_var.o
+OSStatTaskRdy       0x1               build/default/debug/_ext/284751068/os_var.o
+OSStatTaskTimeMax   0x4               build/default/debug/_ext/284751068/os_var.o
+OSCfg_TmrTaskStk    0x800             build/default/debug/_ext/284751068/os_cfg_app.o
+Mem_PoolHeap        0x44              build/default/debug/_ext/2124147866/lib_mem.o
+OSFlagQty           0x2               build/default/debug/_ext/284751068/os_var.o
+OS_AppIdleTaskHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+CPU_Name            0x10              build/default/debug/_ext/2124156279/cpu_core.o
+OSSemDbgListPtr     0x4               build/default/debug/_ext/284751068/os_var.o
+OSPrioHighRdy       0x1               build/default/debug/_ext/284751068/os_var.o
+OSMutexDbgListPtr   0x4               build/default/debug/_ext/284751068/os_var.o
+OSPrioSaved         0x1               build/default/debug/_ext/284751068/os_var.o
+OSIntNestingCtr     0x1               build/default/debug/_ext/284751068/os_var.o
+OSRunning           0x1               build/default/debug/_ext/284751068/os_var.o
+OSCfg_ISRStk        0x800             build/default/debug/_ext/284751068/os_cfg_app.o
+OS_AppTaskReturnHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+OSTaskDbgListPtr    0x4               build/default/debug/_ext/284751068/os_var.o
+OS_AppStatTaskHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+OSRdyList           0x60              build/default/debug/_ext/284751068/os_var.o
+OSTmrQty            0x2               build/default/debug/_ext/284751068/os_var.o
+OSMsgPool           0x8               build/default/debug/_ext/284751068/os_var.o
+OSTaskQty           0x2               build/default/debug/_ext/284751068/os_var.o
+OSPrioTbl           0x4               build/default/debug/_ext/284751068/os_prio.o
+OSStatTaskCtr       0x4               build/default/debug/_ext/284751068/os_var.o
+OSMutexQty          0x2               build/default/debug/_ext/284751068/os_var.o
+OSMemQty            0x2               build/default/debug/_ext/284751068/os_var.o
+OSIdleTaskCtr       0x4               build/default/debug/_ext/284751068/os_var.o
+OSStatTaskCtrRun    0x4               build/default/debug/_ext/284751068/os_var.o
+OSMemDbgListPtr     0x4               build/default/debug/_ext/284751068/os_var.o
+OSTCBCurPtr         0x4               build/default/debug/_ext/284751068/os_var.o
+OSSemQty            0x2               build/default/debug/_ext/284751068/os_var.o
+OSTickTaskTimeMax   0x4               build/default/debug/_ext/284751068/os_var.o
+OSFlagDbgListPtr    0x4               build/default/debug/_ext/284751068/os_var.o
+OS_AppTaskCreateHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+OSQDbgListPtr       0x4               build/default/debug/_ext/284751068/os_var.o
+OSTmrUpdateCtr      0x4               build/default/debug/_ext/284751068/os_var.o
+OSSchedLockNestingCtr
+                    0x1               build/default/debug/_ext/284751068/os_var.o
+OSTCBHighRdyPtr     0x4               build/default/debug/_ext/284751068/os_var.o
+OSTmrDbgListPtr     0x4               build/default/debug/_ext/284751068/os_var.o
+OSCfg_TmrWheel      0x88              build/default/debug/_ext/284751068/os_cfg_app.o
+OSTickTaskTCB       0xc8              build/default/debug/_ext/284751068/os_var.o
+OSTmrTaskTCB        0xc8              build/default/debug/_ext/284751068/os_var.o
+OSCfg_TickWheel     0x88              build/default/debug/_ext/284751068/os_cfg_app.o
+OSIdleTaskTCB       0xc8              build/default/debug/_ext/284751068/os_var.o
+OSPrioCur           0x1               build/default/debug/_ext/284751068/os_var.o
+OSStatTaskCPUUsage  0x1               build/default/debug/_ext/284751068/os_var.o
+OSTmrTickCtr        0x4               build/default/debug/_ext/284751068/os_var.o
+OSStatTaskTCB       0xc8              build/default/debug/_ext/284751068/os_var.o
+Mem_PoolTbl         0x4               build/default/debug/_ext/2124147866/lib_mem.o
+Mem_Heap            0x6000            build/default/debug/_ext/2124147866/lib_mem.o
+OSStatTaskCtrMax    0x4               build/default/debug/_ext/284751068/os_var.o
+OS_AppTaskSwHookPtr
+                    0x4               build/default/debug/_ext/284751068/os_var.o
+Math_RandSeedCur    0x4               build/default/debug/_ext/2124147866/lib_math.o
+OSTaskCtxSwCtr      0x4               build/default/debug/_ext/284751068/os_var.o
+OSCfg_TickTaskStk   0x800             build/default/debug/_ext/284751068/os_cfg_app.o
+OSQQty              0x2               build/default/debug/_ext/284751068/os_var.o
+OSStatResetFlag     0x1               build/default/debug/_ext/284751068/os_var.o
+OSCfg_IdleTaskStk   0x800             build/default/debug/_ext/284751068/os_cfg_app.o
+OSCfg_StatTaskStk   0x800             build/default/debug/_ext/284751068/os_cfg_app.o
+
+Microchip PIC32 Memory-Usage Report
+
+kseg0 Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.text                   0x9d000000        0x11b18       72472  App's exec code 
+.bsp_dma6isr            0x9d011b18          0x340         832   
+.text                   0x9d011e58          0x518        1304  App's exec code 
+.text.fp32div           0x9d012370          0x230         560   
+.text                   0x9d0125a0          0x3f4        1012  App's exec code 
+.gen_excpt              0x9d012994          0x1c4         452   
+.text                   0x9d012b58          0x1bc         444  App's exec code 
+.text.fp32mul           0x9d012d14          0x1bc         444   
+.text                   0x9d012ed0          0x1b8         440  App's exec code 
+.timer_handler          0x9d013088          0x1b0         432   
+.bsp_cs0isr             0x9d013238          0x1a0         416   
+.bsp_cs1isr             0x9d0133d8          0x1a0         416   
+.bsp_ext0isr            0x9d013578          0x1a0         416   
+.bsp_t1isr              0x9d013718          0x1a0         416   
+.bsp_ic1isr             0x9d0138b8          0x1a0         416   
+.bsp_oc1isr             0x9d013a58          0x1a0         416   
+.bsp_ext1isr            0x9d013bf8          0x1a0         416   
+.bsp_t2isr              0x9d013d98          0x1a0         416   
+.bsp_ic2isr             0x9d013f38          0x1a0         416   
+.bsp_oc2isr             0x9d0140d8          0x1a0         416   
+.bsp_ext2isr            0x9d014278          0x1a0         416   
+.bsp_t3isr              0x9d014418          0x1a0         416   
+.bsp_ic3isr             0x9d0145b8          0x1a0         416   
+.bsp_oc3isr             0x9d014758          0x1a0         416   
+.bsp_ext3isr            0x9d0148f8          0x1a0         416   
+.bsp_t4isr              0x9d014a98          0x1a0         416   
+.bsp_ic4isr             0x9d014c38          0x1a0         416   
+.bsp_oc4isr             0x9d014dd8          0x1a0         416   
+.bsp_ext4isr            0x9d014f78          0x1a0         416   
+.bsp_t5isr              0x9d015118          0x1a0         416   
+.bsp_ic5isr             0x9d0152b8          0x1a0         416   
+.bsp_oc5isr             0x9d015458          0x1a0         416   
+.bsp_spi1isr            0x9d0155f8          0x1a0         416   
+.bsp_uart1aisr          0x9d015798          0x1a0         416   
+.bsp_i2c1isr            0x9d015938          0x1a0         416   
+.bsp_cnisr              0x9d015ad8          0x1a0         416   
+.bsp_ad1isr             0x9d015c78          0x1a0         416   
+.bsp_pmpisr             0x9d015e18          0x1a0         416   
+.bsp_cmp1isr            0x9d015fb8          0x1a0         416   
+.bsp_cmp2isr            0x9d016158          0x1a0         416   
+.bsp_uart2aisr          0x9d0162f8          0x1a0         416   
+.bsp_i2c2isr            0x9d016498          0x1a0         416   
+.bsp_fscmisr            0x9d016638          0x1a0         416   
+.bsp_rtccisr            0x9d0167d8          0x1a0         416   
+.bsp_dma0isr            0x9d016978          0x1a0         416   
+.bsp_dma1isr            0x9d016b18          0x1a0         416   
+.bsp_dma2isr            0x9d016cb8          0x1a0         416   
+.bsp_dma3isr            0x9d016e58          0x1a0         416   
+.bsp_dma4isr            0x9d016ff8          0x1a0         416   
+.bsp_dma5isr            0x9d017198          0x1a0         416   
+.bsp_fceisr             0x9d017338          0x1a0         416   
+.bsp_usbisr             0x9d0174d8          0x1a0         416   
+.bsp_can1isr            0x9d017678          0x1a0         416   
+.bsp_can2isr            0x9d017818          0x1a0         416   
+.bsp_ethisr             0x9d0179b8          0x1a0         416   
+.bsp_uart1bisr          0x9d017b58          0x1a0         416   
+.bsp_uart2bisr          0x9d017cf8          0x1a0         416   
+.bsp_uart3bisr          0x9d017e98          0x1a0         416   
+.rodata                 0x9d018038          0x16c         364  Read-only const 
+.text                   0x9d0181a4          0x164         356  App's exec code 
+.rodata                 0x9d018308          0x240         576  Read-only const 
+.text.fpcmp             0x9d018548           0x9c         156   
+.text.fptoul            0x9d0185e4           0x7c         124   
+.dinit                  0x9d018660           0x70         112   
+.text._bootstrap_except 0x9d0186d0           0x48          72   
+.rodata                 0x9d018718           0x4c          76  Read-only const 
+.text                   0x9d018764           0x18          24  App's exec code 
+.text.CheKseg0CacheOff  0x9d01877c           0x18          24   
+.text.CheKseg0CacheOn   0x9d018794           0x18          24   
+.text                   0x9d0187ac           0x18          24  App's exec code 
+.rodata                 0x9d0187c4           0x28          40  Read-only const 
+.text                   0x9d0187ec           0x10          16  App's exec code 
+.rodata                 0x9d0187fc           0x40          64  Read-only const 
+.text._on_reset         0x9d01883c            0x8           8   
+.text._on_bootstrap     0x9d018844            0x8           8   
+      Total kseg0_program_mem used  :     0x1884c      100428  19.2% of 0x80000
+
+kseg0 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg0_boot_mem used  :           0           0  <1% of 0x970
+
+Exception-Memory Usage 
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.app_excpt              0x9fc01180           0x10          16  General-Exception 
+.vector_0               0x9fc01200           0x10          16  Interrupt Vector 0 
+.vector_1               0x9fc01220           0x10          16  Interrupt Vector 1 
+.vector_2               0x9fc01240           0x10          16  Interrupt Vector 2 
+.vector_3               0x9fc01260           0x10          16  Interrupt Vector 3 
+.vector_4               0x9fc01280           0x10          16  Interrupt Vector 4 
+.vector_5               0x9fc012a0           0x10          16  Interrupt Vector 5 
+.vector_6               0x9fc012c0           0x10          16  Interrupt Vector 6 
+.vector_7               0x9fc012e0           0x10          16  Interrupt Vector 7 
+.vector_8               0x9fc01300           0x10          16  Interrupt Vector 8 
+.vector_9               0x9fc01320           0x10          16  Interrupt Vector 9 
+.vector_10              0x9fc01340           0x10          16  Interrupt Vector 10 
+.vector_11              0x9fc01360           0x10          16  Interrupt Vector 11 
+.vector_12              0x9fc01380           0x10          16  Interrupt Vector 12 
+.vector_13              0x9fc013a0           0x10          16  Interrupt Vector 13 
+.vector_14              0x9fc013c0           0x10          16  Interrupt Vector 14 
+.vector_15              0x9fc013e0           0x10          16  Interrupt Vector 15 
+.vector_16              0x9fc01400           0x10          16  Interrupt Vector 16 
+.vector_17              0x9fc01420           0x10          16  Interrupt Vector 17 
+.vector_18              0x9fc01440           0x10          16  Interrupt Vector 18 
+.vector_19              0x9fc01460           0x10          16  Interrupt Vector 19 
+.vector_20              0x9fc01480           0x10          16  Interrupt Vector 20 
+.vector_21              0x9fc014a0           0x10          16  Interrupt Vector 21 
+.vector_22              0x9fc014c0           0x10          16  Interrupt Vector 22 
+.vector_23              0x9fc014e0           0x10          16  Interrupt Vector 23 
+.vector_24              0x9fc01500           0x10          16  Interrupt Vector 24 
+.vector_25              0x9fc01520           0x10          16  Interrupt Vector 25 
+.vector_26              0x9fc01540           0x10          16  Interrupt Vector 26 
+.vector_27              0x9fc01560           0x10          16  Interrupt Vector 27 
+.vector_28              0x9fc01580           0x10          16  Interrupt Vector 28 
+.vector_29              0x9fc015a0           0x10          16  Interrupt Vector 29 
+.vector_30              0x9fc015c0           0x10          16  Interrupt Vector 30 
+.vector_31              0x9fc015e0           0x10          16  Interrupt Vector 31 
+.vector_33              0x9fc01620           0x10          16  Interrupt Vector 33 
+.vector_34              0x9fc01640           0x10          16  Interrupt Vector 34 
+.vector_35              0x9fc01660           0x10          16  Interrupt Vector 35 
+.vector_36              0x9fc01680           0x10          16  Interrupt Vector 36 
+.vector_37              0x9fc016a0           0x10          16  Interrupt Vector 37 
+.vector_38              0x9fc016c0           0x10          16  Interrupt Vector 38 
+.vector_39              0x9fc016e0           0x10          16  Interrupt Vector 39 
+.vector_40              0x9fc01700           0x10          16  Interrupt Vector 40 
+.vector_41              0x9fc01720           0x10          16  Interrupt Vector 41 
+.vector_42              0x9fc01740           0x10          16  Interrupt Vector 42 
+.vector_43              0x9fc01760           0x10          16  Interrupt Vector 43 
+.vector_44              0x9fc01780           0x10          16  Interrupt Vector 44 
+.vector_45              0x9fc017a0           0x10          16  Interrupt Vector 45 
+.vector_46              0x9fc017c0           0x10          16  Interrupt Vector 46 
+.vector_47              0x9fc017e0           0x10          16  Interrupt Vector 47 
+.vector_48              0x9fc01800           0x10          16  Interrupt Vector 48 
+.vector_49              0x9fc01820           0x10          16  Interrupt Vector 49 
+.vector_50              0x9fc01840           0x10          16  Interrupt Vector 50 
+.vector_51              0x9fc01860           0x10          16  Interrupt Vector 51 
+          Total exception_mem used  :       0x340         832  20.3% of 0x1000
+
+kseg1 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.reset                  0xbfc00000          0x1f4         500  Reset handler 
+.bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
+         Total kseg1_boot_mem used  :       0x204         516  44.2% of 0x490
+        --------------------------------------------------------------------------
+         Total Program Memory used  :     0x18d90      101776  19.1% of 0x81e00
+        --------------------------------------------------------------------------
+
+
+kseg0 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+reserve_data_0_kseg0    0x80000000          0x200         512   
+         Total kseg0_data_mem used  :       0x200         512  100.0% of 0x200
+
+kseg1 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+reserve_data_0_kseg1    0xa0000000          0x200         512   
+.sbss                   0xa0000200           0xc8         200  Small uninit data 
+.bss                    0xa00002c8         0x9324       37668  Uninitialized data 
+.bss                    0xa00095ec          0x8c8        2248  Uninitialized data 
+         Total kseg1_data_mem used  :      0x9eb4       40628  31.0% of 0x20000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :      0xa0b4       41140  31.3% of 0x20200
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0xa0009eb8           0x10          16  Reserved for heap 
+stack                   0xa0009ee0        0x16110       90384  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1472/app.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1445226623/bsp.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1445226623/bsp_a.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/2124156279/cpu_core.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1445226623/crt0.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/2124147866/lib_ascii.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/2124147866/lib_math.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/2124147866/lib_mem.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/2124147866/lib_str.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1472/os_app_hooks.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_cfg_app.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_core.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_dbg.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_flag.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_int.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_mem.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_msg.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_mutex.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_pend_multi.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_prio.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_q.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_sem.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_stat.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_task.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_tick.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_time.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_tmr.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/284751068/os_var.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/283369085/cpu_a.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/311494102/os_cpu_a.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/311494102/os_cpu_c.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/283369085/cpu_c.o
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/1758025688/globals.o
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX795F512L\processor.o
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+ .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+kseg0_data_mem   0x80000000         0x00000200
+kseg1_data_mem   0xa0000000         0x00020000         w !x
+kseg0_boot_mem   0x9fc00490         0x00000970
+kseg1_boot_mem   0xbfc00000         0x00000490
+kseg0_program_mem 0x9d000000         0x00080000         xr
+exception_mem    0x9fc01000         0x00001000
+debug_exec_mem   0xbfc02000         0x00000ff0
+config3          0xbfc02ff0         0x00000004
+config2          0xbfc02ff4         0x00000004
+config1          0xbfc02ff8         0x00000004
+config0          0xbfc02ffc         0x00000004
+sfrs             0xbf800000         0x00100000
+configsfrs       0xbfc02ff0         0x00000010
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+reserve_data_0_kseg0
+                0x80000000      0x200
+                0x80000000        0x2 SHORT 0x0
+                0x000001fd                . = 0x1fd
+ *fill*         0x80000002      0x1fb 
+                0x80000200                . = ALIGN (0x4)
+ *fill*         0x800001fd        0x3 
+
+reserve_data_0_kseg1
+                0xa0000000      0x200
+                0xa0000000        0x2 SHORT 0x0
+                0x000001fd                . = 0x1fd
+ *fill*         0xa0000002      0x1fb 
+                0xa0000200                . = ALIGN (0x4)
+ *fill*         0xa00001fd        0x3 
+
+reserve_boot_0x1fc02000_kseg0
+                0x9fc02000      0xff0
+                0x9fc02000        0x2 SHORT 0x0
+                0x00000500                . = 0x500
+ *fill*         0x9fc02002      0x4fe 
+                0x9fc02500                . = ALIGN (0x4)
+                0x9fc02500        0x2 SHORT 0x0
+                0x00000ff0                . = 0xff0
+ *fill*         0x9fc02502      0xaee 
+                0x9fc02ff0                . = ALIGN (0x4)
+
+reserve_boot_0x1fc02000_kseg1
+                0xbfc02000      0xff0
+                0xbfc02000        0x2 SHORT 0x0
+                0x00000500                . = 0x500
+ *fill*         0xbfc02002      0x4fe 
+                0xbfc02500                . = ALIGN (0x4)
+                0xbfc02500        0x2 SHORT 0x0
+                0x00000ff0                . = 0xff0
+ *fill*         0xbfc02502      0xaee 
+                0xbfc02ff0                . = ALIGN (0x4)
+LOAD build/default/debug/_ext/80058371/PIC32INTlib.o
+LOAD build/default/debug/_ext/1472/app.o
+LOAD build/default/debug/_ext/1445226623/bsp.o
+LOAD build/default/debug/_ext/1445226623/bsp_a.o
+LOAD build/default/debug/_ext/2124156279/cpu_core.o
+LOAD build/default/debug/_ext/1445226623/crt0.o
+LOAD build/default/debug/_ext/2124147866/lib_ascii.o
+LOAD build/default/debug/_ext/2124147866/lib_math.o
+LOAD build/default/debug/_ext/2124147866/lib_mem.o
+LOAD build/default/debug/_ext/2124147866/lib_str.o
+LOAD build/default/debug/_ext/1472/os_app_hooks.o
+LOAD build/default/debug/_ext/284751068/os_cfg_app.o
+LOAD build/default/debug/_ext/284751068/os_core.o
+LOAD build/default/debug/_ext/284751068/os_dbg.o
+LOAD build/default/debug/_ext/284751068/os_flag.o
+LOAD build/default/debug/_ext/284751068/os_int.o
+LOAD build/default/debug/_ext/284751068/os_mem.o
+LOAD build/default/debug/_ext/284751068/os_msg.o
+LOAD build/default/debug/_ext/284751068/os_mutex.o
+LOAD build/default/debug/_ext/284751068/os_pend_multi.o
+LOAD build/default/debug/_ext/284751068/os_prio.o
+LOAD build/default/debug/_ext/284751068/os_q.o
+LOAD build/default/debug/_ext/284751068/os_sem.o
+LOAD build/default/debug/_ext/284751068/os_stat.o
+LOAD build/default/debug/_ext/284751068/os_task.o
+LOAD build/default/debug/_ext/284751068/os_tick.o
+LOAD build/default/debug/_ext/284751068/os_time.o
+LOAD build/default/debug/_ext/284751068/os_tmr.o
+LOAD build/default/debug/_ext/284751068/os_var.o
+LOAD build/default/debug/_ext/283369085/cpu_a.o
+LOAD build/default/debug/_ext/311494102/os_cpu_a.o
+LOAD build/default/debug/_ext/311494102/os_cpu_c.o
+LOAD build/default/debug/_ext/283369085/cpu_c.o
+LOAD build/default/debug/_ext/1758025688/globals.o
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x00000001                __MPLAB_DEBUG = 0x1
+                0x00000001                __DEBUG = 0x1
+                0x00000001                __MPLAB_DEBUGGER_PK3 = 0x1
+                0x00000400                PROVIDE (_min_stack_size, 0x400)
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX795F512L\processor.o
+START GROUP
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral.a
+END GROUP
+START GROUP
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a
+END GROUP
+                0x00000001                PROVIDE (_vector_spacing, 0x1)
+                0x9fc01000                _ebase_address = 0x9fc01000
+                0xbfc00000                _RESET_ADDR = 0xbfc00000
+                0xbfc00380                _BEV_EXCPT_ADDR = 0xbfc00380
+                0xbfc00480                _DBG_EXCPT_ADDR = 0xbfc00480
+                0xbfc02000                _DBG_CODE_ADDR = 0xbfc02000
+                0x00000ff0                _DBG_CODE_SIZE = 0xff0
+                0x9fc01180                _GEN_EXCPT_ADDR = (_ebase_address + 0x180)
+
+.config_BFC02FF0
+ *(.config_BFC02FF0)
+
+.config_BFC02FF4
+                0xbfc02ff4        0x4
+ *(.config_BFC02FF4)
+ .config_BFC02FF4
+                0xbfc02ff4        0x4 build/default/debug/_ext/1472/app.o
+
+.config_BFC02FF8
+                0xbfc02ff8        0x4
+ *(.config_BFC02FF8)
+ .config_BFC02FF8
+                0xbfc02ff8        0x4 build/default/debug/_ext/1472/app.o
+
+.config_BFC02FFC
+                0xbfc02ffc        0x4
+ *(.config_BFC02FFC)
+ .config_BFC02FFC
+                0xbfc02ffc        0x4 build/default/debug/_ext/1472/app.o
+                0xbfc02000                PROVIDE (_DBG_CODE_ADDR, 0xbfc02000)
+                0x00000ff0                PROVIDE (_DBG_CODE_SIZE, 0xff0)
+
+.reset          0xbfc00000      0x1f4
+ *(.reset)
+ .reset         0xbfc00000       0x10 build/default/debug/_ext/1445226623/crt0.o
+                0xbfc00000                _reset
+ *(.reset.startup)
+ .reset.startup
+                0xbfc00010      0x1e4 build/default/debug/_ext/1445226623/crt0.o
+
+.bev_excpt      0xbfc00380       0x10
+ *(.bev_handler)
+ .bev_handler   0xbfc00380       0x10 build/default/debug/_ext/1445226623/crt0.o
+
+.dbg_excpt      0xbfc00480        0x0
+                0xbfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
+
+.dbg_code       0xbfc02000        0x0
+                0xbfc02000                . = (. + DEFINED (_DEBUGGER)?_DBG_CODE_SIZE:0x0)
+
+.app_excpt      0x9fc01180       0x10
+ *(.gen_handler)
+ .gen_handler   0x9fc01180       0x10 build/default/debug/_ext/1445226623/crt0.o
+
+.vector_0       0x9fc01200       0x10
+ *(.vector_0)
+ .vector_0      0x9fc01200       0x10 build/default/debug/_ext/1445226623/crt0.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_0) <= (_vector_spacing << 0x5))), function at exception vector 0 too large)
+
+.vector_1       0x9fc01220       0x10
+ *(.vector_1)
+ .vector_1      0x9fc01220       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_1) <= (_vector_spacing << 0x5))), function at exception vector 1 too large)
+
+.vector_2       0x9fc01240       0x10
+ *(.vector_2)
+ .vector_2      0x9fc01240       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_2) <= (_vector_spacing << 0x5))), function at exception vector 2 too large)
+
+.vector_3       0x9fc01260       0x10
+ *(.vector_3)
+ .vector_3      0x9fc01260       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_3) <= (_vector_spacing << 0x5))), function at exception vector 3 too large)
+
+.vector_4       0x9fc01280       0x10
+ *(.vector_4)
+ .vector_4      0x9fc01280       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_4) <= (_vector_spacing << 0x5))), function at exception vector 4 too large)
+
+.vector_5       0x9fc012a0       0x10
+ *(.vector_5)
+ .vector_5      0x9fc012a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_5) <= (_vector_spacing << 0x5))), function at exception vector 5 too large)
+
+.vector_6       0x9fc012c0       0x10
+ *(.vector_6)
+ .vector_6      0x9fc012c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_6) <= (_vector_spacing << 0x5))), function at exception vector 6 too large)
+
+.vector_7       0x9fc012e0       0x10
+ *(.vector_7)
+ .vector_7      0x9fc012e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_7) <= (_vector_spacing << 0x5))), function at exception vector 7 too large)
+
+.vector_8       0x9fc01300       0x10
+ *(.vector_8)
+ .vector_8      0x9fc01300       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_8) <= (_vector_spacing << 0x5))), function at exception vector 8 too large)
+
+.vector_9       0x9fc01320       0x10
+ *(.vector_9)
+ .vector_9      0x9fc01320       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_9) <= (_vector_spacing << 0x5))), function at exception vector 9 too large)
+
+.vector_10      0x9fc01340       0x10
+ *(.vector_10)
+ .vector_10     0x9fc01340       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_10) <= (_vector_spacing << 0x5))), function at exception vector 10 too large)
+
+.vector_11      0x9fc01360       0x10
+ *(.vector_11)
+ .vector_11     0x9fc01360       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_11) <= (_vector_spacing << 0x5))), function at exception vector 11 too large)
+
+.vector_12      0x9fc01380       0x10
+ *(.vector_12)
+ .vector_12     0x9fc01380       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_12) <= (_vector_spacing << 0x5))), function at exception vector 12 too large)
+
+.vector_13      0x9fc013a0       0x10
+ *(.vector_13)
+ .vector_13     0x9fc013a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_13) <= (_vector_spacing << 0x5))), function at exception vector 13 too large)
+
+.vector_14      0x9fc013c0       0x10
+ *(.vector_14)
+ .vector_14     0x9fc013c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_14) <= (_vector_spacing << 0x5))), function at exception vector 14 too large)
+
+.vector_15      0x9fc013e0       0x10
+ *(.vector_15)
+ .vector_15     0x9fc013e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_15) <= (_vector_spacing << 0x5))), function at exception vector 15 too large)
+
+.vector_16      0x9fc01400       0x10
+ *(.vector_16)
+ .vector_16     0x9fc01400       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_16) <= (_vector_spacing << 0x5))), function at exception vector 16 too large)
+
+.vector_17      0x9fc01420       0x10
+ *(.vector_17)
+ .vector_17     0x9fc01420       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_17) <= (_vector_spacing << 0x5))), function at exception vector 17 too large)
+
+.vector_18      0x9fc01440       0x10
+ *(.vector_18)
+ .vector_18     0x9fc01440       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_18) <= (_vector_spacing << 0x5))), function at exception vector 18 too large)
+
+.vector_19      0x9fc01460       0x10
+ *(.vector_19)
+ .vector_19     0x9fc01460       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_19) <= (_vector_spacing << 0x5))), function at exception vector 19 too large)
+
+.vector_20      0x9fc01480       0x10
+ *(.vector_20)
+ .vector_20     0x9fc01480       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_20) <= (_vector_spacing << 0x5))), function at exception vector 20 too large)
+
+.vector_21      0x9fc014a0       0x10
+ *(.vector_21)
+ .vector_21     0x9fc014a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_21) <= (_vector_spacing << 0x5))), function at exception vector 21 too large)
+
+.vector_22      0x9fc014c0       0x10
+ *(.vector_22)
+ .vector_22     0x9fc014c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_22) <= (_vector_spacing << 0x5))), function at exception vector 22 too large)
+
+.vector_23      0x9fc014e0       0x10
+ *(.vector_23)
+ .vector_23     0x9fc014e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_23) <= (_vector_spacing << 0x5))), function at exception vector 23 too large)
+
+.vector_24      0x9fc01500       0x10
+ *(.vector_24)
+ .vector_24     0x9fc01500       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_24) <= (_vector_spacing << 0x5))), function at exception vector 24 too large)
+
+.vector_25      0x9fc01520       0x10
+ *(.vector_25)
+ .vector_25     0x9fc01520       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_25) <= (_vector_spacing << 0x5))), function at exception vector 25 too large)
+
+.vector_26      0x9fc01540       0x10
+ *(.vector_26)
+ .vector_26     0x9fc01540       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_26) <= (_vector_spacing << 0x5))), function at exception vector 26 too large)
+
+.vector_27      0x9fc01560       0x10
+ *(.vector_27)
+ .vector_27     0x9fc01560       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_27) <= (_vector_spacing << 0x5))), function at exception vector 27 too large)
+
+.vector_28      0x9fc01580       0x10
+ *(.vector_28)
+ .vector_28     0x9fc01580       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_28) <= (_vector_spacing << 0x5))), function at exception vector 28 too large)
+
+.vector_29      0x9fc015a0       0x10
+ *(.vector_29)
+ .vector_29     0x9fc015a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_29) <= (_vector_spacing << 0x5))), function at exception vector 29 too large)
+
+.vector_30      0x9fc015c0       0x10
+ *(.vector_30)
+ .vector_30     0x9fc015c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_30) <= (_vector_spacing << 0x5))), function at exception vector 30 too large)
+
+.vector_31      0x9fc015e0       0x10
+ *(.vector_31)
+ .vector_31     0x9fc015e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_31) <= (_vector_spacing << 0x5))), function at exception vector 31 too large)
+
+.vector_32      0x9fc01600        0x0
+ *(.vector_32)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_32) <= (_vector_spacing << 0x5))), function at exception vector 32 too large)
+
+.vector_33      0x9fc01620       0x10
+ *(.vector_33)
+ .vector_33     0x9fc01620       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_33) <= (_vector_spacing << 0x5))), function at exception vector 33 too large)
+
+.vector_34      0x9fc01640       0x10
+ *(.vector_34)
+ .vector_34     0x9fc01640       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_34) <= (_vector_spacing << 0x5))), function at exception vector 34 too large)
+
+.vector_35      0x9fc01660       0x10
+ *(.vector_35)
+ .vector_35     0x9fc01660       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_35) <= (_vector_spacing << 0x5))), function at exception vector 35 too large)
+
+.vector_36      0x9fc01680       0x10
+ *(.vector_36)
+ .vector_36     0x9fc01680       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_36) <= (_vector_spacing << 0x5))), function at exception vector 36 too large)
+
+.vector_37      0x9fc016a0       0x10
+ *(.vector_37)
+ .vector_37     0x9fc016a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_37) <= (_vector_spacing << 0x5))), function at exception vector 37 too large)
+
+.vector_38      0x9fc016c0       0x10
+ *(.vector_38)
+ .vector_38     0x9fc016c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_38) <= (_vector_spacing << 0x5))), function at exception vector 38 too large)
+
+.vector_39      0x9fc016e0       0x10
+ *(.vector_39)
+ .vector_39     0x9fc016e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_39) <= (_vector_spacing << 0x5))), function at exception vector 39 too large)
+
+.vector_40      0x9fc01700       0x10
+ *(.vector_40)
+ .vector_40     0x9fc01700       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_40) <= (_vector_spacing << 0x5))), function at exception vector 40 too large)
+
+.vector_41      0x9fc01720       0x10
+ *(.vector_41)
+ .vector_41     0x9fc01720       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_41) <= (_vector_spacing << 0x5))), function at exception vector 41 too large)
+
+.vector_42      0x9fc01740       0x10
+ *(.vector_42)
+ .vector_42     0x9fc01740       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_42) <= (_vector_spacing << 0x5))), function at exception vector 42 too large)
+
+.vector_43      0x9fc01760       0x10
+ *(.vector_43)
+ .vector_43     0x9fc01760       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_43) <= (_vector_spacing << 0x5))), function at exception vector 43 too large)
+
+.vector_44      0x9fc01780       0x10
+ *(.vector_44)
+ .vector_44     0x9fc01780       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_44) <= (_vector_spacing << 0x5))), function at exception vector 44 too large)
+
+.vector_45      0x9fc017a0       0x10
+ *(.vector_45)
+ .vector_45     0x9fc017a0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_45) <= (_vector_spacing << 0x5))), function at exception vector 45 too large)
+
+.vector_46      0x9fc017c0       0x10
+ *(.vector_46)
+ .vector_46     0x9fc017c0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_46) <= (_vector_spacing << 0x5))), function at exception vector 46 too large)
+
+.vector_47      0x9fc017e0       0x10
+ *(.vector_47)
+ .vector_47     0x9fc017e0       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_47) <= (_vector_spacing << 0x5))), function at exception vector 47 too large)
+
+.vector_48      0x9fc01800       0x10
+ *(.vector_48)
+ .vector_48     0x9fc01800       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_48) <= (_vector_spacing << 0x5))), function at exception vector 48 too large)
+
+.vector_49      0x9fc01820       0x10
+ *(.vector_49)
+ .vector_49     0x9fc01820       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_49) <= (_vector_spacing << 0x5))), function at exception vector 49 too large)
+
+.vector_50      0x9fc01840       0x10
+ *(.vector_50)
+ .vector_50     0x9fc01840       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_50) <= (_vector_spacing << 0x5))), function at exception vector 50 too large)
+
+.vector_51      0x9fc01860       0x10
+ *(.vector_51)
+ .vector_51     0x9fc01860       0x10 build/default/debug/_ext/1445226623/bsp_a.o
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_51) <= (_vector_spacing << 0x5))), function at exception vector 51 too large)
+
+.vector_52      0x9fc01880        0x0
+ *(.vector_52)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_52) <= (_vector_spacing << 0x5))), function at exception vector 52 too large)
+
+.vector_53      0x9fc018a0        0x0
+ *(.vector_53)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_53) <= (_vector_spacing << 0x5))), function at exception vector 53 too large)
+
+.vector_54      0x9fc018c0        0x0
+ *(.vector_54)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_54) <= (_vector_spacing << 0x5))), function at exception vector 54 too large)
+
+.vector_55      0x9fc018e0        0x0
+ *(.vector_55)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_55) <= (_vector_spacing << 0x5))), function at exception vector 55 too large)
+
+.vector_56      0x9fc01900        0x0
+ *(.vector_56)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_56) <= (_vector_spacing << 0x5))), function at exception vector 56 too large)
+
+.vector_57      0x9fc01920        0x0
+ *(.vector_57)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_57) <= (_vector_spacing << 0x5))), function at exception vector 57 too large)
+
+.vector_58      0x9fc01940        0x0
+ *(.vector_58)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_58) <= (_vector_spacing << 0x5))), function at exception vector 58 too large)
+
+.vector_59      0x9fc01960        0x0
+ *(.vector_59)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_59) <= (_vector_spacing << 0x5))), function at exception vector 59 too large)
+
+.vector_60      0x9fc01980        0x0
+ *(.vector_60)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_60) <= (_vector_spacing << 0x5))), function at exception vector 60 too large)
+
+.vector_61      0x9fc019a0        0x0
+ *(.vector_61)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_61) <= (_vector_spacing << 0x5))), function at exception vector 61 too large)
+
+.vector_62      0x9fc019c0        0x0
+ *(.vector_62)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_62) <= (_vector_spacing << 0x5))), function at exception vector 62 too large)
+
+.vector_63      0x9fc019e0        0x0
+ *(.vector_63)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_63) <= (_vector_spacing << 0x5))), function at exception vector 63 too large)
+
+.startup
+ *(.startup)
+
+.text           0x9d000000        0x0
+ *(.stub .gnu.linkonce.t.*)
+ *(.text.*personality*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+ *(.gnu.warning)
+                0x9d000000                . = ALIGN (0x4)
+
+.init           0x9d000000        0x0
+ *crti.o(.init)
+ *crtbegin.o(.init)
+ *(EXCLUDE_FILE(*crtn.o *crtend?.o *crtend.o) .init)
+ *crtend.o(.init)
+ *crtn.o(.init)
+                0x9d000000                . = ALIGN (0x4)
+
+.fini           0x9d000000        0x0
+ *(.fini)
+                0x9d000000                . = ALIGN (0x4)
+
+.preinit_array  0x9d000000        0x0
+                0x9d000000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x9d000000                PROVIDE (__preinit_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.init_array     0x9d000000        0x0
+                0x9d000000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x9d000000                PROVIDE (__init_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.fini_array     0x9d000000        0x0
+                0x9d000000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x9d000000                PROVIDE (__fini_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.ctors          0x9d000000        0x0
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x9d000000                . = ALIGN (0x4)
+
+.dtors          0x9d000000        0x0
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x9d000000                . = ALIGN (0x4)
+
+.rodata         0x9d000000        0x0
+ *(.gnu.linkonce.r.*)
+ *(.rodata1)
+                0x9d000000                . = ALIGN (0x4)
+
+.sdata2         0x9fc00490        0x0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.sbss2          0x9fc00490        0x0
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+                0x9fc00490                . = ALIGN (0x4)
+
+.eh_frame
+ *(.eh_frame)
+                0x9fc00490                . = ALIGN (0x4)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.dbg_data       0xa0000200        0x0
+                0xa0000200                . = (. + DEFINED (_DEBUGGER)?0x200:0x0)
+
+.jcr            0xa0000200        0x0
+ *(.jcr)
+                0xa0000200                . = ALIGN (0x4)
+
+.eh_frame
+ *(.eh_frame)
+                0xa0000200                . = ALIGN (0x4)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0xa0000200                . = ALIGN (0x4)
+
+.persist        0xa0000200        0x0
+                0xa0000200                _persist_begin = .
+ *(.persist .persist.*)
+ *(.pbss .pbss.*)
+                0xa0000200                . = ALIGN (0x4)
+                0xa0000200                _persist_end = .
+
+.data           0xa0000200        0x0
+ *(.gnu.linkonce.d.*)
+ *(.data1)
+                0xa0000200                . = ALIGN (0x4)
+                0xa0000200                . = .
+                0xa00081f0                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got            0xa0000200        0x0
+ *(.got.plt)
+ *(.got)
+                0xa0000200                . = ALIGN (0x4)
+
+.sdata          0xa0000200        0x0
+                0xa0000200                _sdata_begin = .
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0xa0000200                . = ALIGN (0x4)
+                0xa0000200                _sdata_end = .
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0xa0000200                . = ALIGN (0x4)
+                0xa0000200                _data_end = .
+                0xa0000200                _bss_begin = .
+
+.sbss           0xa0000200       0xc8
+                0xa0000200                _sbss_begin = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0xa0000200        0x8 build/default/debug/_ext/1472/app.o
+ .sbss          0xa0000208        0x8 build/default/debug/_ext/1445226623/bsp.o
+ .sbss          0xa0000210        0x8 build/default/debug/_ext/1758025688/globals.o
+ *(.scommon)
+ .scommon       0xa0000218        0x4 build/default/debug/_ext/2124147866/lib_math.o
+                0xa0000218                Math_RandSeedCur
+ .scommon       0xa000021c        0x4 build/default/debug/_ext/2124147866/lib_mem.o
+                0xa000021c                Mem_PoolTbl
+ .scommon       0xa0000220        0x4 build/default/debug/_ext/284751068/os_prio.o
+                0xa0000220                OSPrioTbl
+ .scommon       0xa0000224       0xa3 build/default/debug/_ext/284751068/os_var.o
+                0xa0000224                OS_AppTaskDelHookPtr
+                0xa0000228                OSTmrUpdateCnt
+                0xa000022c                OS_AppTimeTickHookPtr
+                0xa0000230                OSTickCtr
+                0xa0000234                OSTmrTaskTimeMax
+                0xa0000238                OSStatTaskRdy
+                0xa000023c                OSStatTaskTimeMax
+                0xa0000240                OSFlagQty
+                0xa0000244                OS_AppIdleTaskHookPtr
+                0xa0000248                OSSemDbgListPtr
+                0xa000024c                OSPrioHighRdy
+                0xa0000250                OSMutexDbgListPtr
+                0xa0000254                OSPrioSaved
+                0xa0000255                OSIntNestingCtr
+                0xa0000256                OSRunning
+                0xa0000258                OS_AppTaskReturnHookPtr
+                0xa000025c                OSTaskDbgListPtr
+                0xa0000260                OS_AppStatTaskHookPtr
+                0xa0000264                OSTmrQty
+                0xa0000268                OSMsgPool
+                0xa0000270                OSTaskQty
+                0xa0000274                OSStatTaskCtr
+                0xa0000278                OSMutexQty
+                0xa000027a                OSMemQty
+                0xa000027c                OSIdleTaskCtr
+                0xa0000280                OSStatTaskCtrRun
+                0xa0000284                OSMemDbgListPtr
+                0xa0000288                OSTCBCurPtr
+                0xa000028c                OSSemQty
+                0xa0000290                OSTickTaskTimeMax
+                0xa0000294                OSFlagDbgListPtr
+                0xa0000298                OS_AppTaskCreateHookPtr
+                0xa000029c                OSQDbgListPtr
+                0xa00002a0                OSTmrUpdateCtr
+                0xa00002a4                OSSchedLockNestingCtr
+                0xa00002a8                OSTCBHighRdyPtr
+                0xa00002ac                OSTmrDbgListPtr
+                0xa00002b0                OSPrioCur
+                0xa00002b1                OSStatTaskCPUUsage
+                0xa00002b4                OSTmrTickCtr
+                0xa00002b8                OSStatTaskCtrMax
+                0xa00002bc                OS_AppTaskSwHookPtr
+                0xa00002c0                OSTaskCtxSwCtr
+                0xa00002c4                OSQQty
+                0xa00002c6                OSStatResetFlag
+                0xa00002c7                _sbss_end = .
+                0xa00002c8                . = ALIGN (0x4)
+ *fill*         0xa00002c7        0x1 
+
+.bss            0xa00002c8     0x9324
+ *(.dynbss)
+ *(COMMON)
+ COMMON         0xa00002c8       0x10 build/default/debug/_ext/2124156279/cpu_core.o
+                0xa00002c8                CPU_Name
+ COMMON         0xa00002d8     0x6044 build/default/debug/_ext/2124147866/lib_mem.o
+                0xa00002d8                Mem_PoolHeap
+                0xa000031c                Mem_Heap
+ COMMON         0xa000631c     0x2f50 build/default/debug/_ext/284751068/os_cfg_app.o
+                0xa000631c                OSCfg_MsgPool
+                0xa000695c                OSCfg_TmrTaskStk
+                0xa000715c                OSCfg_ISRStk
+                0xa000795c                OSCfg_TmrWheel
+                0xa00079e4                OSCfg_TickWheel
+                0xa0007a6c                OSCfg_TickTaskStk
+                0xa000826c                OSCfg_IdleTaskStk
+                0xa0008a6c                OSCfg_StatTaskStk
+ COMMON         0xa000926c      0x380 build/default/debug/_ext/284751068/os_var.o
+                0xa000926c                OSRdyList
+                0xa00092cc                OSTickTaskTCB
+                0xa0009394                OSTmrTaskTCB
+                0xa000945c                OSIdleTaskTCB
+                0xa0009524                OSStatTaskTCB
+                0xa00095ec                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0xa00095ec                . = ALIGN (0x4)
+                0xa00095ec                _end = .
+                0xa00095ec                _bss_end = .
+                0x00020000                _bmxdudba_address = 0x20000
+                0x00020000                _bmxdupba_address = 0x20000
+
+/DISCARD/
+ *(.pdr)
+ *(.rel.dyn)
+ *(.note.GNU-stack)
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+ *(.discard)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+.mdebug.abi32   0xa00095ec        0x0
+ *(.mdebug.abi32)
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/1472/app.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/1445226623/bsp.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/2124156279/cpu_core.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/2124147866/lib_ascii.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/2124147866/lib_math.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/2124147866/lib_mem.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/2124147866/lib_str.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/1472/os_app_hooks.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_cfg_app.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_core.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_dbg.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_flag.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_int.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_mem.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_msg.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_mutex.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_pend_multi.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_prio.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_q.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_sem.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_stat.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_task.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_tick.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_time.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_tmr.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/284751068/os_var.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/311494102/os_cpu_c.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/283369085/cpu_c.o
+ .mdebug.abi32  0xa00095ec        0x0 build/default/debug/_ext/1758025688/globals.o
+ .mdebug.abi32  0xa00095ec        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .mdebug.abi32  0xa00095ec        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .mdebug.abi32  0xa00095ec        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .mdebug.abi32  0xa00095ec        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.mdebug.abiN32
+ *(.mdebug.abiN32)
+
+.mdebug.abi64
+ *(.mdebug.abi64)
+
+.mdebug.abiO64
+ *(.mdebug.abiO64)
+
+.mdebug.eabi32
+ *(.mdebug.eabi32)
+
+.mdebug.eabi64
+ *(.mdebug.eabi64)
+
+.gcc_compiled_long32
+ *(.gcc_compiled_long32)
+
+.gcc_compiled_long64
+ *(.gcc_compiled_long64)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x78
+ *(.comment)
+ .comment       0x00000000       0x3c build/default/debug/_ext/80058371/PIC32INTlib.o
+                                 0x3d (size before relaxing)
+ .comment       0x00000000       0x3d build/default/debug/_ext/1472/app.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/1445226623/bsp.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/2124156279/cpu_core.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/2124147866/lib_ascii.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/2124147866/lib_math.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/2124147866/lib_mem.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/2124147866/lib_str.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/1472/os_app_hooks.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_cfg_app.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_core.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_dbg.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_flag.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_int.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_mem.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_msg.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_mutex.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_pend_multi.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_prio.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_q.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_sem.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_stat.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_task.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_tick.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_time.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_tmr.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/284751068/os_var.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/311494102/os_cpu_c.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/283369085/cpu_c.o
+ .comment       0x00000000       0x3d build/default/debug/_ext/1758025688/globals.o
+ .comment       0x0000003c       0x3c c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+                                 0x3d (size before relaxing)
+ .comment       0x00000000       0x3d c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .comment       0x00000000       0x3d c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .comment       0x00000000       0x3d c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x790
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_aranges
+                0x00000020       0x20 build/default/debug/_ext/1472/app.o
+ .debug_aranges
+                0x00000040       0x20 build/default/debug/_ext/1445226623/bsp.o
+ .debug_aranges
+                0x00000060      0x330 build/default/debug/_ext/1445226623/bsp_a.o
+ .debug_aranges
+                0x00000390       0x20 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_aranges
+                0x000003b0       0x48 build/default/debug/_ext/1445226623/crt0.o
+ .debug_aranges
+                0x000003f8       0x20 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_aranges
+                0x00000418       0x20 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_aranges
+                0x00000438       0x20 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_aranges
+                0x00000458       0x20 build/default/debug/_ext/2124147866/lib_str.o
+ .debug_aranges
+                0x00000478       0x20 build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_aranges
+                0x00000498       0x20 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_aranges
+                0x000004b8       0x20 build/default/debug/_ext/284751068/os_core.o
+ .debug_aranges
+                0x000004d8       0x20 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_aranges
+                0x000004f8       0x20 build/default/debug/_ext/284751068/os_flag.o
+ .debug_aranges
+                0x00000518       0x20 build/default/debug/_ext/284751068/os_mem.o
+ .debug_aranges
+                0x00000538       0x20 build/default/debug/_ext/284751068/os_msg.o
+ .debug_aranges
+                0x00000558       0x20 build/default/debug/_ext/284751068/os_mutex.o
+ .debug_aranges
+                0x00000578       0x20 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_aranges
+                0x00000598       0x20 build/default/debug/_ext/284751068/os_prio.o
+ .debug_aranges
+                0x000005b8       0x20 build/default/debug/_ext/284751068/os_q.o
+ .debug_aranges
+                0x000005d8       0x20 build/default/debug/_ext/284751068/os_sem.o
+ .debug_aranges
+                0x000005f8       0x20 build/default/debug/_ext/284751068/os_stat.o
+ .debug_aranges
+                0x00000618       0x20 build/default/debug/_ext/284751068/os_task.o
+ .debug_aranges
+                0x00000638       0x20 build/default/debug/_ext/284751068/os_tick.o
+ .debug_aranges
+                0x00000658       0x20 build/default/debug/_ext/284751068/os_time.o
+ .debug_aranges
+                0x00000678       0x20 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_aranges
+                0x00000698       0x20 build/default/debug/_ext/283369085/cpu_a.o
+ .debug_aranges
+                0x000006b8       0x30 build/default/debug/_ext/311494102/os_cpu_a.o
+ .debug_aranges
+                0x000006e8       0x20 build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_aranges
+                0x00000708       0x28 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_aranges
+                0x00000730       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_aranges
+                0x00000750       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_aranges
+                0x00000770       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_pubnames
+                0x00000000     0x2290
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x9c build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_pubnames
+                0x0000009c       0x2b build/default/debug/_ext/1472/app.o
+ .debug_pubnames
+                0x000000c7       0xd1 build/default/debug/_ext/1445226623/bsp.o
+ .debug_pubnames
+                0x00000198       0x86 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_pubnames
+                0x0000021e      0x130 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_pubnames
+                0x0000034e       0x6a build/default/debug/_ext/2124147866/lib_math.o
+ .debug_pubnames
+                0x000003b8       0xda build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_pubnames
+                0x00000492      0x174 build/default/debug/_ext/2124147866/lib_str.o
+ .debug_pubnames
+                0x00000606       0xe9 build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_pubnames
+                0x000006ef      0x4d1 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_pubnames
+                0x00000bc0      0x291 build/default/debug/_ext/284751068/os_core.o
+ .debug_pubnames
+                0x00000e51      0x5d5 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_pubnames
+                0x00001426       0xff build/default/debug/_ext/284751068/os_flag.o
+ .debug_pubnames
+                0x00001525       0x60 build/default/debug/_ext/284751068/os_mem.o
+ .debug_pubnames
+                0x00001585       0xab build/default/debug/_ext/284751068/os_msg.o
+ .debug_pubnames
+                0x00001630       0xba build/default/debug/_ext/284751068/os_mutex.o
+ .debug_pubnames
+                0x000016ea       0x67 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_pubnames
+                0x00001751       0x6a build/default/debug/_ext/284751068/os_prio.o
+ .debug_pubnames
+                0x000017bb       0xb0 build/default/debug/_ext/284751068/os_q.o
+ .debug_pubnames
+                0x0000186b       0xc4 build/default/debug/_ext/284751068/os_sem.o
+ .debug_pubnames
+                0x0000192f       0x61 build/default/debug/_ext/284751068/os_stat.o
+ .debug_pubnames
+                0x00001990      0x1b6 build/default/debug/_ext/284751068/os_task.o
+ .debug_pubnames
+                0x00001b46       0xa5 build/default/debug/_ext/284751068/os_tick.o
+ .debug_pubnames
+                0x00001beb       0x71 build/default/debug/_ext/284751068/os_time.o
+ .debug_pubnames
+                0x00001c5c       0xfe build/default/debug/_ext/284751068/os_tmr.o
+ .debug_pubnames
+                0x00001d5a      0x3cb build/default/debug/_ext/284751068/os_var.o
+ .debug_pubnames
+                0x00002125       0xb9 build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_pubnames
+                0x000021de       0x3b c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_pubnames
+                0x00002219       0x33 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_pubnames
+                0x0000224c       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_pubnames
+                0x0000226c       0x24 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_info     0x00000000    0x1b34e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x740 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_info    0x00000740     0x1397 build/default/debug/_ext/1472/app.o
+ .debug_info    0x00001ad7     0x16d4 build/default/debug/_ext/1445226623/bsp.o
+ .debug_info    0x000031ab       0xe8 build/default/debug/_ext/1445226623/bsp_a.o
+ .debug_info    0x00003293      0x48f build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_info    0x00003722       0xe7 build/default/debug/_ext/1445226623/crt0.o
+ .debug_info    0x00003809      0x688 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_info    0x00003e91      0x306 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_info    0x00004197      0xe93 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_info    0x0000502a     0x12bc build/default/debug/_ext/2124147866/lib_str.o
+ .debug_info    0x000062e6      0xddc build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_info    0x000070c2     0x13c0 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_info    0x00008482     0x1a96 build/default/debug/_ext/284751068/os_core.o
+ .debug_info    0x00009f18     0x1ebe build/default/debug/_ext/284751068/os_dbg.o
+ .debug_info    0x0000bdd6     0x1309 build/default/debug/_ext/284751068/os_flag.o
+ .debug_info    0x0000d0df      0x1d1 build/default/debug/_ext/284751068/os_int.o
+ .debug_info    0x0000d2b0      0x60a build/default/debug/_ext/284751068/os_mem.o
+ .debug_info    0x0000d8ba      0x754 build/default/debug/_ext/284751068/os_msg.o
+ .debug_info    0x0000e00e     0x10fc build/default/debug/_ext/284751068/os_mutex.o
+ .debug_info    0x0000f10a      0xf7b build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_info    0x00010085      0x3a0 build/default/debug/_ext/284751068/os_prio.o
+ .debug_info    0x00010425     0x11d4 build/default/debug/_ext/284751068/os_q.o
+ .debug_info    0x000115f9     0x11b6 build/default/debug/_ext/284751068/os_sem.o
+ .debug_info    0x000127af     0x1000 build/default/debug/_ext/284751068/os_stat.o
+ .debug_info    0x000137af     0x17f4 build/default/debug/_ext/284751068/os_task.o
+ .debug_info    0x00014fa3      0xfb7 build/default/debug/_ext/284751068/os_tick.o
+ .debug_info    0x00015f5a      0xf07 build/default/debug/_ext/284751068/os_time.o
+ .debug_info    0x00016e61     0x1529 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_info    0x0001838a     0x172e build/default/debug/_ext/284751068/os_var.o
+ .debug_info    0x00019ab8      0x10d build/default/debug/_ext/283369085/cpu_a.o
+ .debug_info    0x00019bc5      0x127 build/default/debug/_ext/311494102/os_cpu_a.o
+ .debug_info    0x00019cec      0xeaf build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_info    0x0001ab9b      0x1c4 build/default/debug/_ext/283369085/cpu_c.o
+ .debug_info    0x0001ad5f      0x2d2 build/default/debug/_ext/1758025688/globals.o
+ .debug_info    0x0001b031       0xbb c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_info    0x0001b0ec       0xe2 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0001b1ce       0xbc c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x0001b28a       0xc4 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_abbrev   0x00000000     0x271e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xcb build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_abbrev  0x000000cb      0x19c build/default/debug/_ext/1472/app.o
+ .debug_abbrev  0x00000267      0x2e4 build/default/debug/_ext/1445226623/bsp.o
+ .debug_abbrev  0x0000054b       0x12 build/default/debug/_ext/1445226623/bsp_a.o
+ .debug_abbrev  0x0000055d      0x111 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_abbrev  0x0000066e       0x12 build/default/debug/_ext/1445226623/crt0.o
+ .debug_abbrev  0x00000680       0xc0 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_abbrev  0x00000740      0x104 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_abbrev  0x00000844      0x19b build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_abbrev  0x000009df      0x12d build/default/debug/_ext/2124147866/lib_str.o
+ .debug_abbrev  0x00000b0c       0xfa build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_abbrev  0x00000c06      0x120 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_abbrev  0x00000d26      0x1a9 build/default/debug/_ext/284751068/os_core.o
+ .debug_abbrev  0x00000ecf      0x137 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_abbrev  0x00001006      0x1ae build/default/debug/_ext/284751068/os_flag.o
+ .debug_abbrev  0x000011b4       0x1f build/default/debug/_ext/284751068/os_int.o
+ .debug_abbrev  0x000011d3      0x128 build/default/debug/_ext/284751068/os_mem.o
+ .debug_abbrev  0x000012fb      0x191 build/default/debug/_ext/284751068/os_msg.o
+ .debug_abbrev  0x0000148c      0x19f build/default/debug/_ext/284751068/os_mutex.o
+ .debug_abbrev  0x0000162b      0x197 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_abbrev  0x000017c2       0xb7 build/default/debug/_ext/284751068/os_prio.o
+ .debug_abbrev  0x00001879      0x1bf build/default/debug/_ext/284751068/os_q.o
+ .debug_abbrev  0x00001a38      0x19f build/default/debug/_ext/284751068/os_sem.o
+ .debug_abbrev  0x00001bd7      0x156 build/default/debug/_ext/284751068/os_stat.o
+ .debug_abbrev  0x00001d2d      0x1ba build/default/debug/_ext/284751068/os_task.o
+ .debug_abbrev  0x00001ee7      0x179 build/default/debug/_ext/284751068/os_tick.o
+ .debug_abbrev  0x00002060      0x1a9 build/default/debug/_ext/284751068/os_time.o
+ .debug_abbrev  0x00002209      0x1e7 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_abbrev  0x000023f0       0xb0 build/default/debug/_ext/284751068/os_var.o
+ .debug_abbrev  0x000024a0       0x14 build/default/debug/_ext/283369085/cpu_a.o
+ .debug_abbrev  0x000024b4       0x12 build/default/debug/_ext/311494102/os_cpu_a.o
+ .debug_abbrev  0x000024c6      0x16c build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_abbrev  0x00002632       0x1f build/default/debug/_ext/283369085/cpu_c.o
+ .debug_abbrev  0x00002651       0x3b build/default/debug/_ext/1758025688/globals.o
+ .debug_abbrev  0x0000268c       0x23 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_abbrev  0x000026af       0x25 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x000026d4       0x25 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x000026f9       0x25 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_line     0x00000000     0x5dc7
+ *(.debug_line)
+ .debug_line    0x00000000      0x168 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_line    0x00000168      0x317 build/default/debug/_ext/1472/app.o
+ .debug_line    0x0000047f      0x4fd build/default/debug/_ext/1445226623/bsp.o
+ .debug_line    0x0000097c      0x85b build/default/debug/_ext/1445226623/bsp_a.o
+ .debug_line    0x000011d7      0x1a9 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_line    0x00001380      0x10a build/default/debug/_ext/1445226623/crt0.o
+ .debug_line    0x0000148a      0x1e1 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_line    0x0000166b      0x16d build/default/debug/_ext/2124147866/lib_math.o
+ .debug_line    0x000017d8      0x39d build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_line    0x00001b75      0x4c3 build/default/debug/_ext/2124147866/lib_str.o
+ .debug_line    0x00002038      0x2c4 build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_line    0x000022fc      0x205 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_line    0x00002501      0x518 build/default/debug/_ext/284751068/os_core.o
+ .debug_line    0x00002a19      0x223 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_line    0x00002c3c      0x401 build/default/debug/_ext/284751068/os_flag.o
+ .debug_line    0x0000303d       0x1d build/default/debug/_ext/284751068/os_int.o
+ .debug_line    0x0000305a      0x1d1 build/default/debug/_ext/284751068/os_mem.o
+ .debug_line    0x0000322b      0x28b build/default/debug/_ext/284751068/os_msg.o
+ .debug_line    0x000034b6      0x34a build/default/debug/_ext/284751068/os_mutex.o
+ .debug_line    0x00003800      0x291 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_line    0x00003a91      0x18c build/default/debug/_ext/284751068/os_prio.o
+ .debug_line    0x00003c1d      0x33c build/default/debug/_ext/284751068/os_q.o
+ .debug_line    0x00003f59      0x33d build/default/debug/_ext/284751068/os_sem.o
+ .debug_line    0x00004296      0x298 build/default/debug/_ext/284751068/os_stat.o
+ .debug_line    0x0000452e      0x54e build/default/debug/_ext/284751068/os_task.o
+ .debug_line    0x00004a7c      0x2e8 build/default/debug/_ext/284751068/os_tick.o
+ .debug_line    0x00004d64      0x2b1 build/default/debug/_ext/284751068/os_time.o
+ .debug_line    0x00005015      0x3c1 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_line    0x000053d6      0x1c0 build/default/debug/_ext/284751068/os_var.o
+ .debug_line    0x00005596       0x68 build/default/debug/_ext/283369085/cpu_a.o
+ .debug_line    0x000055fe      0x1dd build/default/debug/_ext/311494102/os_cpu_a.o
+ .debug_line    0x000057db      0x311 build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_line    0x00005aec       0x1d build/default/debug/_ext/283369085/cpu_c.o
+ .debug_line    0x00005b09       0xb9 build/default/debug/_ext/1758025688/globals.o
+ .debug_line    0x00005bc2       0x62 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_line    0x00005c24       0x97 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00005cbb       0x84 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x00005d3f       0x88 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_frame    0x00000000     0x1ec8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x80 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_frame   0x00000080       0x80 build/default/debug/_ext/1472/app.o
+ .debug_frame   0x00000100      0x208 build/default/debug/_ext/1445226623/bsp.o
+ .debug_frame   0x00000308       0xd4 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_frame   0x000003dc      0x1d0 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_frame   0x000005ac       0x80 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_frame   0x0000062c      0x160 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_frame   0x0000078c      0x298 build/default/debug/_ext/2124147866/lib_str.o
+ .debug_frame   0x00000a24      0x10c build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_frame   0x00000b30       0x2c build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_frame   0x00000b5c      0x3c8 build/default/debug/_ext/284751068/os_core.o
+ .debug_frame   0x00000f24       0x2c build/default/debug/_ext/284751068/os_dbg.o
+ .debug_frame   0x00000f50      0x17c build/default/debug/_ext/284751068/os_flag.o
+ .debug_frame   0x000010cc       0x9c build/default/debug/_ext/284751068/os_mem.o
+ .debug_frame   0x00001168       0xf0 build/default/debug/_ext/284751068/os_msg.o
+ .debug_frame   0x00001258      0x10c build/default/debug/_ext/284751068/os_mutex.o
+ .debug_frame   0x00001364       0x80 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_frame   0x000013e4       0x80 build/default/debug/_ext/284751068/os_prio.o
+ .debug_frame   0x00001464      0x144 build/default/debug/_ext/284751068/os_q.o
+ .debug_frame   0x000015a8      0x144 build/default/debug/_ext/284751068/os_sem.o
+ .debug_frame   0x000016ec       0x80 build/default/debug/_ext/284751068/os_stat.o
+ .debug_frame   0x0000176c      0x294 build/default/debug/_ext/284751068/os_task.o
+ .debug_frame   0x00001a00       0xd4 build/default/debug/_ext/284751068/os_tick.o
+ .debug_frame   0x00001ad4       0xb8 build/default/debug/_ext/284751068/os_time.o
+ .debug_frame   0x00001b8c      0x198 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_frame   0x00001d24      0x10c build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_frame   0x00001e30       0x30 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_frame   0x00001e60       0x28 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_frame   0x00001e88       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_frame   0x00001ea8       0x20 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_str      0x00000000     0x1d8c
+ *(.debug_str)
+ .debug_str     0x00000000        0x0 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_str     0x00000000       0x6a build/default/debug/_ext/1472/app.o
+ .debug_str     0x0000006a       0xdb build/default/debug/_ext/1445226623/bsp.o
+ .debug_str     0x00000145       0x10 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_str     0x00000155        0x0 build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_str     0x00000155       0x1a build/default/debug/_ext/2124147866/lib_math.o
+ .debug_str     0x0000016f       0xb8 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_str     0x00000227      0x13c build/default/debug/_ext/2124147866/lib_str.o
+ .debug_str     0x00000363       0xdd build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_str     0x00000440      0x3b5 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_str     0x000007f5      0x25f build/default/debug/_ext/284751068/os_core.o
+ .debug_str     0x00000a54      0x715 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_str     0x00001169       0xf5 build/default/debug/_ext/284751068/os_flag.o
+ .debug_str     0x0000125e        0x0 build/default/debug/_ext/284751068/os_int.o
+ .debug_str     0x0000125e       0x3c build/default/debug/_ext/284751068/os_mem.o
+ .debug_str     0x0000129a       0x45 build/default/debug/_ext/284751068/os_msg.o
+ .debug_str     0x000012df       0xdd build/default/debug/_ext/284751068/os_mutex.o
+ .debug_str     0x000013bc       0xaa build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_str     0x00001466        0xa build/default/debug/_ext/284751068/os_prio.o
+ .debug_str     0x00001470       0xd2 build/default/debug/_ext/284751068/os_q.o
+ .debug_str     0x00001542       0xd3 build/default/debug/_ext/284751068/os_sem.o
+ .debug_str     0x00001615      0x1af build/default/debug/_ext/284751068/os_stat.o
+ .debug_str     0x000017c4       0xf4 build/default/debug/_ext/284751068/os_task.o
+ .debug_str     0x000018b8       0xfb build/default/debug/_ext/284751068/os_tick.o
+ .debug_str     0x000019b3       0xd6 build/default/debug/_ext/284751068/os_time.o
+ .debug_str     0x00001a89      0x1aa build/default/debug/_ext/284751068/os_tmr.o
+ .debug_str     0x00001c33       0x60 build/default/debug/_ext/284751068/os_var.o
+ .debug_str     0x00001c93       0xf9 build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_str     0x00001d8c        0x0 build/default/debug/_ext/283369085/cpu_c.o
+ .debug_str     0x00001d8c        0x0 build/default/debug/_ext/1758025688/globals.o
+ .debug_str     0x00001d8c        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .debug_str     0x00001d8c        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x00001d8c        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_str     0x00001d8c        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.debug_loc      0x00000000     0xc5ff
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x34c build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_loc     0x0000034c      0x13e build/default/debug/_ext/1472/app.o
+ .debug_loc     0x0000048a      0x8a6 build/default/debug/_ext/1445226623/bsp.o
+ .debug_loc     0x00000d30      0x340 build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_loc     0x00001070      0x67c build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_loc     0x000016ec      0x185 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_loc     0x00001871     0x12c3 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_loc     0x00002b34     0x1f2e build/default/debug/_ext/2124147866/lib_str.o
+ .debug_loc     0x00004a62      0x1e2 build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_loc     0x00004c44      0x336 build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_loc     0x00004f7a     0x11a1 build/default/debug/_ext/284751068/os_core.o
+ .debug_loc     0x0000611b      0x672 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_loc     0x0000678d      0xb33 build/default/debug/_ext/284751068/os_flag.o
+ .debug_loc     0x000072c0      0x384 build/default/debug/_ext/284751068/os_mem.o
+ .debug_loc     0x00007644      0x35d build/default/debug/_ext/284751068/os_msg.o
+ .debug_loc     0x000079a1      0x650 build/default/debug/_ext/284751068/os_mutex.o
+ .debug_loc     0x00007ff1      0x47c build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_loc     0x0000846d      0x2c9 build/default/debug/_ext/284751068/os_prio.o
+ .debug_loc     0x00008736      0x8e1 build/default/debug/_ext/284751068/os_q.o
+ .debug_loc     0x00009017      0x911 build/default/debug/_ext/284751068/os_sem.o
+ .debug_loc     0x00009928      0x3e0 build/default/debug/_ext/284751068/os_stat.o
+ .debug_loc     0x00009d08     0x1170 build/default/debug/_ext/284751068/os_task.o
+ .debug_loc     0x0000ae78      0x508 build/default/debug/_ext/284751068/os_tick.o
+ .debug_loc     0x0000b380      0x3c9 build/default/debug/_ext/284751068/os_time.o
+ .debug_loc     0x0000b749      0x934 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_loc     0x0000c07d      0x582 build/default/debug/_ext/311494102/os_cpu_c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+                0x00000000     0x3462
+ *(.debug_pubtypes)
+ .debug_pubtypes
+                0x00000000       0x12 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .debug_pubtypes
+                0x00000012      0x2a6 build/default/debug/_ext/1472/app.o
+ .debug_pubtypes
+                0x000002b8       0xaf build/default/debug/_ext/1445226623/bsp.o
+ .debug_pubtypes
+                0x00000367       0x8c build/default/debug/_ext/2124156279/cpu_core.o
+ .debug_pubtypes
+                0x000003f3       0x3e build/default/debug/_ext/2124147866/lib_ascii.o
+ .debug_pubtypes
+                0x00000431       0x39 build/default/debug/_ext/2124147866/lib_math.o
+ .debug_pubtypes
+                0x0000046a       0xd8 build/default/debug/_ext/2124147866/lib_mem.o
+ .debug_pubtypes
+                0x00000542       0xa3 build/default/debug/_ext/2124147866/lib_str.o
+ .debug_pubtypes
+                0x000005e5      0x287 build/default/debug/_ext/1472/os_app_hooks.o
+ .debug_pubtypes
+                0x0000086c      0x2bf build/default/debug/_ext/284751068/os_cfg_app.o
+ .debug_pubtypes
+                0x00000b2b      0x2c2 build/default/debug/_ext/284751068/os_core.o
+ .debug_pubtypes
+                0x00000ded      0x3c9 build/default/debug/_ext/284751068/os_dbg.o
+ .debug_pubtypes
+                0x000011b6      0x299 build/default/debug/_ext/284751068/os_flag.o
+ .debug_pubtypes
+                0x0000144f       0x12 build/default/debug/_ext/284751068/os_int.o
+ .debug_pubtypes
+                0x00001461       0xe3 build/default/debug/_ext/284751068/os_mem.o
+ .debug_pubtypes
+                0x00001544       0xd8 build/default/debug/_ext/284751068/os_msg.o
+ .debug_pubtypes
+                0x0000161c      0x283 build/default/debug/_ext/284751068/os_mutex.o
+ .debug_pubtypes
+                0x0000189f      0x2a1 build/default/debug/_ext/284751068/os_pend_multi.o
+ .debug_pubtypes
+                0x00001b40       0x49 build/default/debug/_ext/284751068/os_prio.o
+ .debug_pubtypes
+                0x00001b89      0x27b build/default/debug/_ext/284751068/os_q.o
+ .debug_pubtypes
+                0x00001e04      0x27f build/default/debug/_ext/284751068/os_sem.o
+ .debug_pubtypes
+                0x00002083      0x2a5 build/default/debug/_ext/284751068/os_stat.o
+ .debug_pubtypes
+                0x00002328      0x2a7 build/default/debug/_ext/284751068/os_task.o
+ .debug_pubtypes
+                0x000025cf      0x28e build/default/debug/_ext/284751068/os_tick.o
+ .debug_pubtypes
+                0x0000285d      0x293 build/default/debug/_ext/284751068/os_time.o
+ .debug_pubtypes
+                0x00002af0      0x307 build/default/debug/_ext/284751068/os_tmr.o
+ .debug_pubtypes
+                0x00002df7      0x3bc build/default/debug/_ext/284751068/os_var.o
+ .debug_pubtypes
+                0x000031b3      0x27c build/default/debug/_ext/311494102/os_cpu_c.o
+ .debug_pubtypes
+                0x0000342f       0x12 build/default/debug/_ext/283369085/cpu_c.o
+ .debug_pubtypes
+                0x00003441       0x21 build/default/debug/_ext/1758025688/globals.o
+
+.debug_ranges   0x00000000      0x3c0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x328 build/default/debug/_ext/1445226623/bsp_a.o
+ .debug_ranges  0x00000328       0x40 build/default/debug/_ext/1445226623/crt0.o
+ .debug_ranges  0x00000368       0x28 build/default/debug/_ext/311494102/os_cpu_a.o
+ .debug_ranges  0x00000390       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_ranges  0x000003a0       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x000003b0       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.gnu.attributes
+                0x00000000       0x10
+ *(.gnu.attributes)
+ .gnu.attributes
+                0x00000000       0x10 build/default/debug/_ext/80058371/PIC32INTlib.o
+ .gnu.attributes
+                0x00000010       0x10 build/default/debug/_ext/1472/app.o
+ .gnu.attributes
+                0x00000020       0x10 build/default/debug/_ext/1445226623/bsp.o
+ .gnu.attributes
+                0x00000030       0x10 build/default/debug/_ext/2124156279/cpu_core.o
+ .gnu.attributes
+                0x00000040       0x10 build/default/debug/_ext/2124147866/lib_ascii.o
+ .gnu.attributes
+                0x00000050       0x10 build/default/debug/_ext/2124147866/lib_math.o
+ .gnu.attributes
+                0x00000060       0x10 build/default/debug/_ext/2124147866/lib_mem.o
+ .gnu.attributes
+                0x00000070       0x10 build/default/debug/_ext/2124147866/lib_str.o
+ .gnu.attributes
+                0x00000080       0x10 build/default/debug/_ext/1472/os_app_hooks.o
+ .gnu.attributes
+                0x00000090       0x10 build/default/debug/_ext/284751068/os_cfg_app.o
+ .gnu.attributes
+                0x000000a0       0x10 build/default/debug/_ext/284751068/os_core.o
+ .gnu.attributes
+                0x000000b0       0x10 build/default/debug/_ext/284751068/os_dbg.o
+ .gnu.attributes
+                0x000000c0       0x10 build/default/debug/_ext/284751068/os_flag.o
+ .gnu.attributes
+                0x000000d0       0x10 build/default/debug/_ext/284751068/os_int.o
+ .gnu.attributes
+                0x000000e0       0x10 build/default/debug/_ext/284751068/os_mem.o
+ .gnu.attributes
+                0x000000f0       0x10 build/default/debug/_ext/284751068/os_msg.o
+ .gnu.attributes
+                0x00000100       0x10 build/default/debug/_ext/284751068/os_mutex.o
+ .gnu.attributes
+                0x00000110       0x10 build/default/debug/_ext/284751068/os_pend_multi.o
+ .gnu.attributes
+                0x00000120       0x10 build/default/debug/_ext/284751068/os_prio.o
+ .gnu.attributes
+                0x00000130       0x10 build/default/debug/_ext/284751068/os_q.o
+ .gnu.attributes
+                0x00000140       0x10 build/default/debug/_ext/284751068/os_sem.o
+ .gnu.attributes
+                0x00000150       0x10 build/default/debug/_ext/284751068/os_stat.o
+ .gnu.attributes
+                0x00000160       0x10 build/default/debug/_ext/284751068/os_task.o
+ .gnu.attributes
+                0x00000170       0x10 build/default/debug/_ext/284751068/os_tick.o
+ .gnu.attributes
+                0x00000180       0x10 build/default/debug/_ext/284751068/os_time.o
+ .gnu.attributes
+                0x00000190       0x10 build/default/debug/_ext/284751068/os_tmr.o
+ .gnu.attributes
+                0x000001a0       0x10 build/default/debug/_ext/284751068/os_var.o
+ .gnu.attributes
+                0x000001b0       0x10 build/default/debug/_ext/311494102/os_cpu_c.o
+ .gnu.attributes
+                0x000001c0       0x10 build/default/debug/_ext/283369085/cpu_c.o
+ .gnu.attributes
+                0x000001d0       0x10 build/default/debug/_ext/1758025688/globals.o
+ .gnu.attributes
+                0x000001e0       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+ .gnu.attributes
+                0x000001f0       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .gnu.attributes
+                0x00000200       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .gnu.attributes
+                0x00000210       0x10 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2\libgcc.a
+START GROUP
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libdebug.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libe.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libdsp.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2\libgcc.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libc.a
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a
+END GROUP
+LOAD c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2\libgcc.a
+OUTPUT(dist/default/debug/uCOS-III.X.debug.elf elf32-tradlittlemips)
+LOAD stack
+LOAD data_init
+
+.reginfo        0x00000000       0x18
+ .reginfo       0x00000000       0x18 build/default/debug/_ext/80058371/PIC32INTlib.o
+
+.stack          0xa0009ee0      0x400
+ .stack         0xa0009ee0      0x400 stack
+
+.bss            0xa00095ec      0x8c8
+ .bss           0xa00095ec      0x8c8 build/default/debug/_ext/1472/app.o
+
+.bss%z1         0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+
+.data%z2        0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+
+.bss%z3         0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+
+.data%z4        0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+
+.bss%z5         0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+
+.data%z6        0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+
+.bss%z7         0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+
+.data%z8        0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+
+.bss%z9         0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+
+.data%z10       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+
+.bss%z11        0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.data%z12       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.bss%z13        0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+
+.data%z14       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+
+.bss%z15        0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+
+.data%z16       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+
+.bss%z17        0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+
+.data%z18       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+
+.bss%z19        0x00000000        0x0
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX795F512L\processor.o
+
+.data%z20       0x00000000        0x0
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX795F512L\processor.o
+
+.bss%z21        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/1758025688/globals.o
+
+.data%z22       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1758025688/globals.o
+
+.bss%z23        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/283369085/cpu_c.o
+
+.data%z24       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/283369085/cpu_c.o
+
+.bss%z25        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/311494102/os_cpu_c.o
+
+.data%z26       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/311494102/os_cpu_c.o
+
+.bss%z27        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/311494102/os_cpu_a.o
+
+.data%z28       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/311494102/os_cpu_a.o
+
+.bss%z29        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/283369085/cpu_a.o
+
+.data%z30       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/283369085/cpu_a.o
+
+.bss%z31        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_var.o
+
+.data%z32       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_var.o
+
+.bss%z33        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_tmr.o
+
+.data%z34       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_tmr.o
+
+.bss%z35        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_time.o
+
+.data%z36       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_time.o
+
+.bss%z37        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_tick.o
+
+.data%z38       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_tick.o
+
+.bss%z39        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_task.o
+
+.data%z40       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_task.o
+
+.bss%z41        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_stat.o
+
+.data%z42       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_stat.o
+
+.bss%z43        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_sem.o
+
+.data%z44       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_sem.o
+
+.bss%z45        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_q.o
+
+.data%z46       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_q.o
+
+.bss%z47        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_prio.o
+
+.data%z48       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_prio.o
+
+.bss%z49        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_pend_multi.o
+
+.data%z50       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_pend_multi.o
+
+.bss%z51        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_mutex.o
+
+.data%z52       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_mutex.o
+
+.bss%z53        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_msg.o
+
+.data%z54       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_msg.o
+
+.bss%z55        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_mem.o
+
+.data%z56       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_mem.o
+
+.bss%z57        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_int.o
+
+.data%z58       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_int.o
+
+.bss%z59        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_flag.o
+
+.data%z60       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_flag.o
+
+.bss%z61        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_dbg.o
+
+.data%z62       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_dbg.o
+
+.bss%z63        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_core.o
+
+.data%z64       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_core.o
+
+.bss%z65        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/284751068/os_cfg_app.o
+
+.data%z66       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/284751068/os_cfg_app.o
+
+.bss%z67        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/1472/os_app_hooks.o
+
+.data%z68       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1472/os_app_hooks.o
+
+.bss%z69        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/2124147866/lib_str.o
+
+.data%z70       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/2124147866/lib_str.o
+
+.bss%z71        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/2124147866/lib_mem.o
+
+.data%z72       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/2124147866/lib_mem.o
+
+.bss%z73        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/2124147866/lib_math.o
+
+.data%z74       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/2124147866/lib_math.o
+
+.bss%z75        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/2124147866/lib_ascii.o
+
+.data%z76       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/2124147866/lib_ascii.o
+
+.bss%z77        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/1445226623/crt0.o
+
+.data%z78       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1445226623/crt0.o
+
+.bss%z79        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/2124156279/cpu_core.o
+
+.data%z80       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/2124156279/cpu_core.o
+
+.bss%z81        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.data%z82       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bss%z83        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/1445226623/bsp.o
+
+.data%z84       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1445226623/bsp.o
+
+.data%z85       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/1472/app.o
+
+.bss%z86        0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/debug/_ext/80058371/PIC32INTlib.o
+
+.data%z87       0x00000000        0x0
+ .data          0x00000000        0x0 build/default/debug/_ext/80058371/PIC32INTlib.o
+
+.text           0x9d000000    0x11b18
+ .text          0x9d000000     0x2368 build/default/debug/_ext/2124147866/lib_str.o
+                0x9d000000                Str_Len
+                0x9d000044                Str_Len_N
+                0x9d0000cc                Str_Copy
+                0x9d000118                Str_Copy_N
+                0x9d000244                Str_Cat
+                0x9d000290                Str_Cat_N
+                0x9d000408                Str_Cmp
+                0x9d000454                Str_Cmp_N
+                0x9d0006a0                Str_CmpIgnoreCase
+                0x9d0006ec                Str_CmpIgnoreCase_N
+                0x9d0009d8                Str_Char
+                0x9d000a2c                Str_Char_N
+                0x9d000b58                Str_Char_Last
+                0x9d000bac                Str_Char_Last_N
+                0x9d000cc4                Str_Str
+                0x9d000d10                Str_Str_N
+                0x9d000ef8                Str_FmtNbr_Int32U
+                0x9d000f94                Str_FmtNbr_Int32S
+                0x9d001064                Str_FmtNbr_32
+                0x9d0017ac                Str_ParseNbr_Int32U
+                0x9d00180c                Str_ParseNbr_Int32S
+ .text          0x9d002368     0x2214 build/default/debug/_ext/284751068/os_task.o
+                0x9d002368                OSTaskChangePrio
+                0x9d0025a4                OSTaskCreate
+                0x9d002974                OSTaskDel
+                0x9d002ba4                OSTaskQFlush
+                0x9d002c64                OSTaskQPend
+                0x9d002fa0                OSTaskQPendAbort
+                0x9d0030c8                OSTaskQPost
+                0x9d00313c                OSTaskRegGet
+                0x9d0031f0                OSTaskRegSet
+                0x9d0032a0                OSTaskResume
+                0x9d003504                OSTaskSemPend
+                0x9d0037e0                OSTaskSemPendAbort
+                0x9d003920                OSTaskSemPost
+                0x9d003980                OSTaskSemSet
+                0x9d003a2c                OSTaskStkChk
+                0x9d003be4                OSTaskSuspend
+                0x9d003e24                OS_TaskDbgListAdd
+                0x9d003e8c                OS_TaskDbgListRemove
+                0x9d003f4c                OS_TaskInit
+                0x9d003f84                OS_TaskInitTCB
+                0x9d00419c                OS_TaskQPost
+                0x9d004354                OS_TaskReturn
+                0x9d0043a0                OS_TaskSemPost
+ .text          0x9d00457c     0x1e58 build/default/debug/_ext/284751068/os_core.o
+                0x9d00457c                OSInit
+                0x9d004818                OSIntEnter
+                0x9d004880                OSIntExit
+                0x9d0049c0                OSSched
+                0x9d004a9c                OSSchedLock
+                0x9d004b44                OSSchedUnlock
+                0x9d004c1c                OSStart
+                0x9d004cc4                OSVersion
+                0x9d004cf4                OS_IdleTask
+                0x9d004d4c                OS_IdleTaskInit
+                0x9d004de8                OS_Pend
+                0x9d004ec4                OS_PendAbort
+                0x9d005078                OS_PendAbort1
+                0x9d00511c                OS_PendDataInit
+                0x9d0051d8                OS_PendDbgNameAdd
+                0x9d0052c4                OS_PendDbgNameRemove
+                0x9d005354                OS_PendListChangePrio
+                0x9d005424                OS_PendListInit
+                0x9d005460                OS_PendListInsertHead
+                0x9d005508                OS_PendListInsertPrio
+                0x9d0056d4                OS_PendListRemove
+                0x9d00577c                OS_PendListRemove1
+                0x9d005898                OS_PendObjDel
+                0x9d005a34                OS_PendObjDel1
+                0x9d005ad8                OS_Post
+                0x9d005cec                OS_Post1
+                0x9d005db0                OS_RdyListInit
+                0x9d005e30                OS_RdyListInsert
+                0x9d005ea4                OS_RdyListInsertHead
+                0x9d005f8c                OS_RdyListInsertTail
+                0x9d006070                OS_RdyListMoveHeadToTail
+                0x9d006190                OS_RdyListRemove
+                0x9d0062d8                OS_TaskBlock
+                0x9d00637c                OS_TaskRdy
+ .text          0x9d0063d4     0x15b4 build/default/debug/_ext/284751068/os_flag.o
+                0x9d0063d4                OSFlagCreate
+                0x9d0064d0                OSFlagDel
+                0x9d0066fc                OSFlagPend
+                0x9d006f58                OSFlagPendAbort
+                0x9d007128                OSFlagPendGetFlagsRdy
+                0x9d0071ac                OSFlagPost
+                0x9d00727c                OS_FlagBlock
+                0x9d0072f4                OS_FlagClr
+                0x9d007360                OS_FlagInit
+                0x9d007394                OS_FlagDbgListAdd
+                0x9d00740c                OS_FlagDbgListRemove
+                0x9d0074cc                OS_FlagPost
+                0x9d007890                OS_FlagTaskRdy
+ .text          0x9d007988     0x14f0 build/default/debug/_ext/2124147866/lib_mem.o
+                0x9d007988                Mem_Init
+                0x9d007a58                Mem_Clr
+                0x9d007a9c                Mem_Set
+                0x9d007c50                Mem_Copy
+                0x9d007e58                Mem_Cmp
+                0x9d0080e8                Mem_HeapAlloc
+                0x9d008248                Mem_PoolClr
+                0x9d00832c                Mem_PoolCreate
+                0x9d008ac0                Mem_PoolBlkGet
+                0x9d008bd0                Mem_PoolBlkFree
+ .text          0x9d008e78     0x13f8 build/default/debug/_ext/284751068/os_tmr.o
+                0x9d008e78                OSTmrCreate
+                0x9d00903c                OSTmrDel
+                0x9d0091e4                OSTmrRemainGet
+                0x9d0093f4                OSTmrStart
+                0x9d009588                OSTmrStateGet
+                0x9d009660                OSTmrStop
+                0x9d0098d4                OS_TmrClr
+                0x9d009968                OS_TmrDbgListAdd
+                0x9d0099d0                OS_TmrDbgListRemove
+                0x9d009a90                OS_TmrInit
+                0x9d009c7c                OS_TmrLink
+                0x9d009f28                OS_TmrResetPeak
+                0x9d009f98                OS_TmrUnlink
+                0x9d00a0ac                OS_TmrTask
+ .text          0x9d00a270      0xe64 build/default/debug/_ext/284751068/os_mutex.o
+                0x9d00a270                OSMutexCreate
+                0x9d00a378                OSMutexDel
+                0x9d00a68c                OSMutexPend
+                0x9d00aaf8                OSMutexPendAbort
+                0x9d00ac9c                OSMutexPost
+                0x9d00aee4                OS_MutexClr
+                0x9d00af68                OS_MutexDbgListAdd
+                0x9d00afe0                OS_MutexDbgListRemove
+                0x9d00b0a0                OS_MutexInit
+ .text          0x9d00b0d4      0xd94 build/default/debug/_ext/1445226623/bsp.o
+                0x9d00b0d4                LED_On
+                0x9d00b194                LED_Off
+                0x9d00b254                LED_Toggle
+                0x9d00b3fc                BSP_TickISR_Handler
+                0x9d00b460                BSP_Except_Handler
+                0x9d00b480                BSP_DefaultHandler
+                0x9d00b53c                OSProbe_TmrInit
+                0x9d00b578                OSProbe_TmrRd
+                0x9d00b6d0                BSP_Dly
+                0x9d00b768                BSP_IntDisAll
+                0x9d00b7d8                BSP_InitIO
+ .text          0x9d00be68      0xd10 build/default/debug/_ext/284751068/os_q.o
+                0x9d00be68                OSQCreate
+                0x9d00bf90                OSQDel
+                0x9d00c190                OSQFlush
+                0x9d00c248                OSQPend
+                0x9d00c5a8                OSQPendAbort
+                0x9d00c74c                OSQPost
+                0x9d00c7e0                OS_QClr
+                0x9d00c86c                OS_QDbgListAdd
+                0x9d00c8e4                OS_QDbgListRemove
+                0x9d00c9a4                OS_QInit
+                0x9d00c9d8                OS_QPost
+ .text          0x9d00cb78      0xcf4 build/default/debug/_ext/284751068/os_sem.o
+                0x9d00cb78                OSSemCreate
+                0x9d00cc74                OSSemDel
+                0x9d00ce74                OSSemPend
+                0x9d00d1b0                OSSemPendAbort
+                0x9d00d354                OSSemPost
+                0x9d00d3d8                OSSemSet
+                0x9d00d4d0                OS_SemClr
+                0x9d00d540                OS_SemDbgListAdd
+                0x9d00d5b8                OS_SemDbgListRemove
+                0x9d00d678                OS_SemInit
+                0x9d00d6ac                OS_SemPost
+ .text          0x9d00d86c      0xa38 build/default/debug/_ext/284751068/os_tick.o
+                0x9d00d86c                OS_TickTask
+                0x9d00d8e4                OS_TickTaskInit
+                0x9d00d9bc                OS_TickListInit
+                0x9d00da3c                OS_TickListInsert
+                0x9d00ddf8                OS_TickListRemove
+                0x9d00def8                OS_TickListResetPeak
+                0x9d00df68                OS_TickListUpdate
+ .text          0x9d00e2a4      0x978 build/default/debug/_ext/2124147866/lib_ascii.o
+                0x9d00e2a4                ASCII_IsAlpha
+                0x9d00e35c                ASCII_IsAlphaNum
+                0x9d00e46c                ASCII_IsLower
+                0x9d00e4cc                ASCII_IsUpper
+                0x9d00e52c                ASCII_IsDig
+                0x9d00e58c                ASCII_IsDigOct
+                0x9d00e5ec                ASCII_IsDigHex
+                0x9d00e68c                ASCII_IsBlank
+                0x9d00e6ec                ASCII_IsSpace
+                0x9d00e78c                ASCII_IsPrint
+                0x9d00e7ec                ASCII_IsGraph
+                0x9d00e84c                ASCII_IsPunct
+                0x9d00ea28                ASCII_IsCtrl
+                0x9d00ea94                ASCII_ToLower
+                0x9d00eb1c                ASCII_ToUpper
+                0x9d00eba4                ASCII_Cmp
+ .text          0x9d00ec1c      0x8cc build/default/debug/_ext/284751068/os_time.o
+                0x9d00ec1c                OSTimeDly
+                0x9d00eda8                OSTimeDlyHMSM
+                0x9d00f180                OSTimeDlyResume
+                0x9d00f3a8                OSTimeGet
+                0x9d00f404                OSTimeSet
+                0x9d00f460                OSTimeTick
+ .text          0x9d00f4e8      0x6d0 build/default/debug/_ext/284751068/os_msg.o
+                0x9d00f4e8                OSMsgPoolExtend
+                0x9d00f5b4                OS_MsgPoolCreate
+                0x9d00f690                OS_MsgPoolInit
+                0x9d00f748                OS_MsgQEntriesPeakReset
+                0x9d00f798                OS_MsgQFreeAll
+                0x9d00f850                OS_MsgQInit
+                0x9d00f8a8                OS_MsgQGet
+                0x9d00f9f0                OS_MsgQPut
+ .text          0x9d00fbb8      0x6cc build/default/debug/_ext/284751068/os_stat.o
+                0x9d00fbb8                OSStatReset
+                0x9d00fcec                OSStatTaskCPUUsageInit
+                0x9d00fe2c                OS_StatTask
+                0x9d010154                OS_StatTaskInit
+ .text          0x9d010284      0x6c4 build/default/debug/_ext/284751068/os_pend_multi.o
+                0x9d010284                OSPendMulti
+                0x9d010554                OS_PendMultiGetRdy
+                0x9d01070c                OS_PendMultiValidate
+                0x9d01080c                OS_PendMultiWait
+ .text          0x9d010948      0x668 build/default/debug/_ext/311494102/os_cpu_c.o
+                0x9d010948                OSInitHook
+                0x9d010968                OSTaskCreateHook
+                0x9d0109b0                OSTaskDelHook
+                0x9d0109f8                OSIdleTaskHook
+                0x9d010a38                OSStatTaskHook
+                0x9d010a78                OSTaskStkInit
+                0x9d010e94                OSTaskSwHook
+                0x9d010f28                OSTimeTickHook
+                0x9d010f68                OSTaskReturnHook
+ .text          0x9d010fb0      0x4ac build/default/debug/_ext/284751068/os_mem.o
+                0x9d010fb0                OSMemCreate
+                0x9d0111d4                OSMemGet
+                0x9d0112b8                OSMemPut
+                0x9d0113c0                OS_MemDbgListAdd
+                0x9d011428                OS_MemInit
+ .text          0x9d01145c      0x368 build/default/debug/_ext/284751068/os_dbg.o
+                0x9d01145c                OS_Dbg_Init
+ .text          0x9d0117c4      0x354 build/default/debug/_ext/2124156279/cpu_core.o
+                0x9d0117c4                CPU_Init
+                0x9d0117f4                CPU_SW_Exception
+                0x9d011808                CPU_NameClr
+                0x9d011860                CPU_NameGet
+                0x9d011900                CPU_NameSet
+                0x9d0119d8                CPU_CntLeadZeros
+
+.bsp_dma6isr    0x9d011b18      0x340
+ .bsp_dma6isr   0x9d011b18      0x340 build/default/debug/_ext/1445226623/bsp_a.o
+
+.text           0x9d011e58      0x518
+ .text          0x9d011e58      0x2cc build/default/debug/_ext/1472/app.o
+                0x9d011e58                main
+                0x9d01201c                CN_Int_Init
+ .text          0x9d012124      0x24c build/default/debug/_ext/80058371/PIC32INTlib.o
+                0x9d012124                INTEnableSystemMultiVectoredInt
+                0x9d012180                INTEnableSystemSingleVectoredInt
+                0x9d012200                INTDisableSystemSingleVectoredInt
+                0x9d012260                INTGetPendingInterrupt
+
+.text.fp32div   0x9d012370      0x230
+ .text.fp32div  0x9d012370      0x230 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+                0x9d012370                fpdiv
+                0x9d012370                __divsf3
+
+.text           0x9d0125a0      0x3f4
+ .text          0x9d0125a0      0x210 build/default/debug/_ext/284751068/os_prio.o
+                0x9d0125a0                OS_PrioInit
+                0x9d012600                OS_PrioGetHighest
+                0x9d01268c                OS_PrioInsert
+                0x9d01271c                OS_PrioRemove
+ .text          0x9d0127b0      0x1e4 build/default/debug/_ext/1472/os_app_hooks.o
+                0x9d0127b0                App_OS_SetAllHooks
+                0x9d012848                App_OS_ClrAllHooks
+                0x9d0128a8                App_OS_TaskCreateHook
+                0x9d0128cc                App_OS_TaskDelHook
+                0x9d0128f0                App_OS_TaskReturnHook
+                0x9d012914                App_OS_IdleTaskHook
+                0x9d012934                App_OS_StatTaskHook
+                0x9d012954                App_OS_TaskSwHook
+                0x9d012974                App_OS_TimeTickHook
+
+.gen_excpt      0x9d012994      0x1c4
+ .gen_excpt     0x9d012994      0x1c4 build/default/debug/_ext/311494102/os_cpu_a.o
+                0x9d012994                OSCtxSw
+
+.text           0x9d012b58      0x1bc
+ .text          0x9d012b58      0x1bc build/default/debug/_ext/311494102/os_cpu_a.o
+                0x9d012b58                OSStartHighRdy
+                0x9d012c18                OSIntCtxSw
+                0x9d012cfc                OS_CPU_SR_Save
+                0x9d012d08                OS_CPU_SR_Restore
+
+.text.fp32mul   0x9d012d14      0x1bc
+ .text.fp32mul  0x9d012d14      0x1bc c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+                0x9d012d14                __mulsf3
+                0x9d012d14                fpmul
+
+.text           0x9d012ed0      0x1b8
+ .text          0x9d012ed0      0x1b8 build/default/debug/_ext/284751068/os_cfg_app.o
+                0x9d012ed0                OSCfg_Init
+
+.timer_handler  0x9d013088      0x1b0
+ .timer_handler
+                0x9d013088      0x1b0 build/default/debug/_ext/311494102/os_cpu_a.o
+                0x9d013088                CoreTimerIntHandler
+
+.bsp_cs0isr     0x9d013238      0x1a0
+ .bsp_cs0isr    0x9d013238      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_cs1isr     0x9d0133d8      0x1a0
+ .bsp_cs1isr    0x9d0133d8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ext0isr    0x9d013578      0x1a0
+ .bsp_ext0isr   0x9d013578      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_t1isr      0x9d013718      0x1a0
+ .bsp_t1isr     0x9d013718      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ic1isr     0x9d0138b8      0x1a0
+ .bsp_ic1isr    0x9d0138b8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_oc1isr     0x9d013a58      0x1a0
+ .bsp_oc1isr    0x9d013a58      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ext1isr    0x9d013bf8      0x1a0
+ .bsp_ext1isr   0x9d013bf8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_t2isr      0x9d013d98      0x1a0
+ .bsp_t2isr     0x9d013d98      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ic2isr     0x9d013f38      0x1a0
+ .bsp_ic2isr    0x9d013f38      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_oc2isr     0x9d0140d8      0x1a0
+ .bsp_oc2isr    0x9d0140d8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ext2isr    0x9d014278      0x1a0
+ .bsp_ext2isr   0x9d014278      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_t3isr      0x9d014418      0x1a0
+ .bsp_t3isr     0x9d014418      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ic3isr     0x9d0145b8      0x1a0
+ .bsp_ic3isr    0x9d0145b8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_oc3isr     0x9d014758      0x1a0
+ .bsp_oc3isr    0x9d014758      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ext3isr    0x9d0148f8      0x1a0
+ .bsp_ext3isr   0x9d0148f8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_t4isr      0x9d014a98      0x1a0
+ .bsp_t4isr     0x9d014a98      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ic4isr     0x9d014c38      0x1a0
+ .bsp_ic4isr    0x9d014c38      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_oc4isr     0x9d014dd8      0x1a0
+ .bsp_oc4isr    0x9d014dd8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ext4isr    0x9d014f78      0x1a0
+ .bsp_ext4isr   0x9d014f78      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_t5isr      0x9d015118      0x1a0
+ .bsp_t5isr     0x9d015118      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ic5isr     0x9d0152b8      0x1a0
+ .bsp_ic5isr    0x9d0152b8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_oc5isr     0x9d015458      0x1a0
+ .bsp_oc5isr    0x9d015458      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_spi1isr    0x9d0155f8      0x1a0
+ .bsp_spi1isr   0x9d0155f8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_uart1aisr  0x9d015798      0x1a0
+ .bsp_uart1aisr
+                0x9d015798      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_i2c1isr    0x9d015938      0x1a0
+ .bsp_i2c1isr   0x9d015938      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_cnisr      0x9d015ad8      0x1a0
+ .bsp_cnisr     0x9d015ad8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ad1isr     0x9d015c78      0x1a0
+ .bsp_ad1isr    0x9d015c78      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_pmpisr     0x9d015e18      0x1a0
+ .bsp_pmpisr    0x9d015e18      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_cmp1isr    0x9d015fb8      0x1a0
+ .bsp_cmp1isr   0x9d015fb8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_cmp2isr    0x9d016158      0x1a0
+ .bsp_cmp2isr   0x9d016158      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_uart2aisr  0x9d0162f8      0x1a0
+ .bsp_uart2aisr
+                0x9d0162f8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_i2c2isr    0x9d016498      0x1a0
+ .bsp_i2c2isr   0x9d016498      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_fscmisr    0x9d016638      0x1a0
+ .bsp_fscmisr   0x9d016638      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_rtccisr    0x9d0167d8      0x1a0
+ .bsp_rtccisr   0x9d0167d8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma0isr    0x9d016978      0x1a0
+ .bsp_dma0isr   0x9d016978      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma1isr    0x9d016b18      0x1a0
+ .bsp_dma1isr   0x9d016b18      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma2isr    0x9d016cb8      0x1a0
+ .bsp_dma2isr   0x9d016cb8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma3isr    0x9d016e58      0x1a0
+ .bsp_dma3isr   0x9d016e58      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma4isr    0x9d016ff8      0x1a0
+ .bsp_dma4isr   0x9d016ff8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_dma5isr    0x9d017198      0x1a0
+ .bsp_dma5isr   0x9d017198      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_fceisr     0x9d017338      0x1a0
+ .bsp_fceisr    0x9d017338      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_usbisr     0x9d0174d8      0x1a0
+ .bsp_usbisr    0x9d0174d8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_can1isr    0x9d017678      0x1a0
+ .bsp_can1isr   0x9d017678      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_can2isr    0x9d017818      0x1a0
+ .bsp_can2isr   0x9d017818      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_ethisr     0x9d0179b8      0x1a0
+ .bsp_ethisr    0x9d0179b8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_uart1bisr  0x9d017b58      0x1a0
+ .bsp_uart1bisr
+                0x9d017b58      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_uart2bisr  0x9d017cf8      0x1a0
+ .bsp_uart2bisr
+                0x9d017cf8      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.bsp_uart3bisr  0x9d017e98      0x1a0
+ .bsp_uart3bisr
+                0x9d017e98      0x1a0 build/default/debug/_ext/1445226623/bsp_a.o
+
+.rodata         0x9d018038      0x16c
+ .rodata        0x9d018038      0x16c build/default/debug/_ext/284751068/os_dbg.o
+                0x9d018038                OSDbg_DbgEn
+                0x9d01803a                OSDbg_ArgChkEn
+                0x9d01803b                OSDbg_AppHooksEn
+                0x9d01803c                OSDbg_EndiannessTest
+                0x9d018040                OSDbg_CalledFromISRChkEn
+                0x9d018041                OSDbg_FlagEn
+                0x9d018044                OSDbg_FlagGrp
+                0x9d01806c                OSDbg_FlagDelEn
+                0x9d01806d                OSDbg_FlagModeClrEn
+                0x9d01806e                OSDbg_FlagPendAbortEn
+                0x9d018070                OSDbg_FlagGrpSize
+                0x9d018072                OSDbg_FlagWidth
+                0x9d018074                OSDbg_IntQ
+                0x9d018076                OSDbg_ISRPostDeferredEn
+                0x9d018078                OSDbg_Mem
+                0x9d018098                OSDbg_MemEn
+                0x9d01809a                OSDbg_MemSize
+                0x9d01809c                OSDbg_MsgEn
+                0x9d01809e                OSDbg_MsgSize
+                0x9d0180a0                OSDbg_MsgPoolSize
+                0x9d0180a2                OSDbg_MsgQSize
+                0x9d0180a4                OSDbg_Mutex
+                0x9d0180d0                OSDbg_MutexEn
+                0x9d0180d1                OSDbg_MutexDelEn
+                0x9d0180d2                OSDbg_MutexPendAbortEn
+                0x9d0180d4                OSDbg_MutexSize
+                0x9d0180d6                OSDbg_ObjTypeChkEn
+                0x9d0180d7                OSDbg_PendMultiEn
+                0x9d0180d8                OSDbg_PendDataSize
+                0x9d0180da                OSDbg_PendListSize
+                0x9d0180dc                OSDbg_PendObjSize
+                0x9d0180de                OSDbg_PrioMax
+                0x9d0180e0                OSDbg_PrioTblSize
+                0x9d0180e2                OSDbg_PtrSize
+                0x9d0180e4                OSDbg_Q
+                0x9d018114                OSDbg_QEn
+                0x9d018115                OSDbg_QDelEn
+                0x9d018116                OSDbg_QFlushEn
+                0x9d018117                OSDbg_QPendAbortEn
+                0x9d018118                OSDbg_QSize
+                0x9d01811a                OSDbg_SchedRoundRobinEn
+                0x9d01811c                OSDbg_Sem
+                0x9d018144                OSDbg_SemEn
+                0x9d018145                OSDbg_SemDelEn
+                0x9d018146                OSDbg_SemPendAbortEn
+                0x9d018147                OSDbg_SemSetEn
+                0x9d018148                OSDbg_SemSize
+                0x9d01814a                OSDbg_RdyList
+                0x9d01814c                OSDbg_RdyListSize
+                0x9d018150                OSDbg_StkWidth
+                0x9d018151                OSDbg_StatTaskEn
+                0x9d018152                OSDbg_StatTaskStkChkEn
+                0x9d018153                OSDbg_TaskChangePrioEn
+                0x9d018154                OSDbg_TaskDelEn
+                0x9d018155                OSDbg_TaskQEn
+                0x9d018156                OSDbg_TaskQPendAbortEn
+                0x9d018157                OSDbg_TaskProfileEn
+                0x9d018158                OSDbg_TaskRegTblSize
+                0x9d01815a                OSDbg_TaskSemPendAbortEn
+                0x9d01815b                OSDbg_TaskSuspendEn
+                0x9d01815c                OSDbg_TCBSize
+                0x9d01815e                OSDbg_TickSpokeSize
+                0x9d018160                OSDbg_TimeDlyHMSMEn
+                0x9d018161                OSDbg_TimeDlyResumeEn
+                0x9d018164                OSDbg_Tmr
+                0x9d018198                OSDbg_TmrEn
+                0x9d018199                OSDbg_TmrDelEn
+                0x9d01819a                OSDbg_TmrSize
+                0x9d01819c                OSDbg_TmrSpokeSize
+                0x9d01819e                OSDbg_VersionNbr
+                0x9d0181a0                OSDbg_DataSize
+
+.text           0x9d0181a4      0x164
+ .text          0x9d0181a4      0x164 build/default/debug/_ext/2124147866/lib_math.o
+                0x9d0181a4                Math_Init
+                0x9d0181d8                Math_RandSetSeed
+                0x9d018228                Math_Rand
+                0x9d018290                Math_RandSeed
+
+.rodata         0x9d018308      0x240
+ .rodata        0x9d018308      0x100 build/default/debug/_ext/2124156279/cpu_core.o
+ .rodata        0x9d018408       0xa4 build/default/debug/_ext/284751068/os_cfg_app.o
+                0x9d018408                OSCfg_IdleTaskStkBasePtr
+                0x9d01840c                OSCfg_IdleTaskStkLimit
+                0x9d018410                OSCfg_IdleTaskStkSize
+                0x9d018414                OSCfg_IdleTaskStkSizeRAM
+                0x9d018418                OSCfg_IntQBasePtr
+                0x9d01841c                OSCfg_IntQSize
+                0x9d018420                OSCfg_IntQSizeRAM
+                0x9d018424                OSCfg_IntQTaskStkBasePtr
+                0x9d018428                OSCfg_IntQTaskStkLimit
+                0x9d01842c                OSCfg_IntQTaskStkSize
+                0x9d018430                OSCfg_IntQTaskStkSizeRAM
+                0x9d018434                OSCfg_ISRStkBasePtr
+                0x9d018438                OSCfg_ISRStkSize
+                0x9d01843c                OSCfg_ISRStkSizeRAM
+                0x9d018440                OSCfg_MsgPoolSize
+                0x9d018444                OSCfg_MsgPoolSizeRAM
+                0x9d018448                OSCfg_MsgPoolBasePtr
+                0x9d01844c                OSCfg_StatTaskPrio
+                0x9d018450                OSCfg_StatTaskRate_Hz
+                0x9d018454                OSCfg_StatTaskStkBasePtr
+                0x9d018458                OSCfg_StatTaskStkLimit
+                0x9d01845c                OSCfg_StatTaskStkSize
+                0x9d018460                OSCfg_StatTaskStkSizeRAM
+                0x9d018464                OSCfg_StkSizeMin
+                0x9d018468                OSCfg_TickRate_Hz
+                0x9d01846c                OSCfg_TickTaskPrio
+                0x9d018470                OSCfg_TickTaskStkBasePtr
+                0x9d018474                OSCfg_TickTaskStkLimit
+                0x9d018478                OSCfg_TickTaskStkSize
+                0x9d01847c                OSCfg_TickTaskStkSizeRAM
+                0x9d018480                OSCfg_TickWheelSize
+                0x9d018484                OSCfg_TickWheelSizeRAM
+                0x9d018488                OSCfg_TmrTaskPrio
+                0x9d01848c                OSCfg_TmrTaskRate_Hz
+                0x9d018490                OSCfg_TmrTaskStkBasePtr
+                0x9d018494                OSCfg_TmrTaskStkLimit
+                0x9d018498                OSCfg_TmrTaskStkSize
+                0x9d01849c                OSCfg_TmrTaskStkSizeRAM
+                0x9d0184a0                OSCfg_TmrWheelSize
+                0x9d0184a4                OSCfg_TmrWheelSizeRAM
+                0x9d0184a8                OSCfg_DataSizeRAM
+ .rodata        0x9d0184ac       0x9c build/default/debug/_ext/2124147866/lib_str.o
+
+.text.fpcmp     0x9d018548       0x9c
+ .text.fpcmp    0x9d018548       0x9c c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+                0x9d018548                __eqsf2
+                0x9d018548                __lesf2
+                0x9d018548                __gtsf2
+                0x9d018548                __nesf2
+                0x9d018548                fpcmp
+                0x9d018548                __gesf2
+                0x9d018548                __ltsf2
+
+.text.fptoul    0x9d0185e4       0x7c
+ .text.fptoul   0x9d0185e4       0x7c c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+                0x9d0185e4                fptoul
+                0x9d0185e4                fptoui
+                0x9d0185e4                __fixunssfsi
+
+.dinit          0x9d018660       0x70
+ .dinit         0x9d018660       0x70 data_init
+
+.text._bootstrap_exception_handler
+                0x9d0186d0       0x48
+ .text._bootstrap_exception_handler
+                0x9d0186d0       0x48 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d0186d0                _bootstrap_exception_handler
+
+.rodata         0x9d018718       0x4c
+ .rodata        0x9d018718       0x2c build/default/debug/_ext/284751068/os_core.o
+ .rodata        0x9d018744       0x20 build/default/debug/_ext/284751068/os_tmr.o
+
+.text           0x9d018764       0x18
+ .text          0x9d018764       0x18 build/default/debug/_ext/283369085/cpu_a.o
+                0x9d018764                CPU_SR_Save
+                0x9d018770                CPU_SR_Restore
+
+.text.CheKseg0CacheOff
+                0x9d01877c       0x18
+ .text.CheKseg0CacheOff
+                0x9d01877c       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+                0x9d01877c                CheKseg0CacheOff
+
+.text.CheKseg0CacheOn
+                0x9d018794       0x18
+ .text.CheKseg0CacheOn
+                0x9d018794       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+                0x9d018794                CheKseg0CacheOn
+
+.text           0x9d0187ac       0x18
+ .text          0x9d0187ac       0x18 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d0187ac                _nmi_handler
+
+.rodata         0x9d0187c4       0x28
+ .rodata        0x9d0187c4       0x14 build/default/debug/_ext/284751068/os_stat.o
+ .rodata        0x9d0187d8       0x14 build/default/debug/_ext/284751068/os_tick.o
+
+.text           0x9d0187ec       0x10
+ .text          0x9d0187ec       0x10 build/default/debug/_ext/1445226623/crt0.o
+                0x9d0187f4                __crt0_exit
+
+.rodata         0x9d0187fc       0x40
+ .rodata        0x9d0187fc        0xc build/default/debug/_ext/284751068/os_flag.o
+ .rodata        0x9d018808        0xc build/default/debug/_ext/284751068/os_mutex.o
+ .rodata        0x9d018814        0xc build/default/debug/_ext/284751068/os_sem.o
+ .rodata        0x9d018820        0xc build/default/debug/_ext/284751068/os_task.o
+ .rodata        0x9d01882c        0x8 build/default/debug/_ext/1472/app.o
+ .rodata        0x9d018834        0x8 build/default/debug/_ext/284751068/os_q.o
+
+.text._on_reset
+                0x9d01883c        0x8
+ .text._on_reset
+                0x9d01883c        0x8 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d01883c                _on_reset
+
+.text._on_bootstrap
+                0x9d018844        0x8
+ .text._on_bootstrap
+                0x9d018844        0x8 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d018844                _on_bootstrap
+
+.text%z88       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fptoul.o)
+
+.text%z89       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fpcmp.o)
+
+.text%z90       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32mul.o)
+
+.text%z91       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libm.a(fp32div.o)
+
+.text%z92       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+
+.text%z93       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+
+.text%z94       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+
+.text%z95       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX795F512L.a(pcache.o)
+
+.text%z96       0x00000000        0x0
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v1.33/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX795F512L\processor.o
+
+.text%z97       0x00000000        0x0
+ .text          0x00000000        0x0 build/default/debug/_ext/1758025688/globals.o
+
+.text%z98       0x00000000        0x0
+ .text          0x00000000        0x0 build/default/debug/_ext/283369085/cpu_c.o
+
+.text%z99       0x00000000        0x0
+ .text          0x00000000        0x0 build/default/debug/_ext/284751068/os_var.o
+
+.text%z100      0x00000000        0x0
+ .text          0x00000000        0x0 build/default/debug/_ext/284751068/os_int.o
+
+.text%z101      0x00000000        0x0
+ .text          0x00000000        0x0 build/default/debug/_ext/1445226623/bsp_a.o
