@@ -222,9 +222,8 @@
         <property key="legacy-libc" value="false"/>
         <property key="no-start-files" value="true"/>
       </C32Global>
-      <SKDEPIC32PlatformTool>
-        <property key="whatToProgram" value="all"/>
-      </SKDEPIC32PlatformTool>
+      <PICkit3PlatformTool>
+      </PICkit3PlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

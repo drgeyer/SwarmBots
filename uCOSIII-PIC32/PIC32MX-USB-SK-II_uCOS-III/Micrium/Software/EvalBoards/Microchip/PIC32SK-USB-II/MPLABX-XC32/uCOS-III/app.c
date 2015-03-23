@@ -56,6 +56,7 @@
 
 static  OS_TCB    App_TaskStartTCB; 
 static  CPU_STK   App_TaskStartStk[APP_CFG_TASK_START_STK_SIZE];
+
 static  OS_TCB    App_TaskEncoderTCB;
 static  CPU_STK   App_TaskEncoderStk[APP_CFG_TASK_ENCODER_STK_SIZE];
 
@@ -70,8 +71,11 @@ static  void  App_TaskCreate  (void);
 static  void  App_ObjCreate   (void);
 
 static  void  App_TaskStart   (void  *p_arg);
+static  void  App_TaskEncoder(void * data);
 
 void CN_Int_Init();
+void PWM_Module_Init();
+void AdjustPWM();
 
 /*
 *********************************************************************************************************
@@ -202,11 +206,11 @@ static  void  App_TaskCreate (void)
     {
         //oops there was an error starting this task
     }
-    
+
     //create RF Communication task
     //create IMU Update task
     //create Ultrasonic Read task
-    //create MotorPWM task (Encoders will interrupt on CN pins, handled seperately)
+
     
 }
 
@@ -238,18 +242,77 @@ void CN_Int_Init()
 
     LeftEncoder_State = PORTCbits.RC14;
     RightEncoder_State = PORTDbits.RD4;
-
-    
 }
 
-void App_TaskEncoder(void * data)
+void PWM_Module_Init()
+{
+    // Test of PWM mode
+
+    OC1CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
+    OC2CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
+    OC3CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
+    OC4CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
+
+    T2CON = 0x8000 | 0x00;  //ON, 1:1 prescalar
+
+    PR2 =    225;   // Set PWM period: 225*444.444ns = 100 us, f = 10 KHz
+
+    OC1RS = (PR2 * LeftWheelPercent)/100;  // set PWM on time out of PR2 period
+    OC2RS = (PR2 * RightWheelPercent)/100;  // set pwm on time
+}
+
+static void App_TaskEncoder(void * data)
 {
     OS_ERR err;
+    PWM_Module_Init();
     while(1)
     {
         //compare the LeftEncoder_Ticks to RightEncoder_Ticks
         //which ever wheel is moving faster will have more ticks
-        //
+        AdjustPWM();
+
+        //Reset our ticks so the next time we get to this function we will
+        //have valid data in these global tick counters
+        LeftEncoder_Ticks = 0;
+        RightEncoder_Ticks = 0;
         OSTimeDlyHMSM(0, 0, 0, 200,OS_OPT_TIME_HMSM_STRICT,&err);
     }
+}
+
+//employ simple PID controls
+void AdjustPWM()
+{
+    static double prevLeftWheelSpeed, currLeftWheelSpeed;
+    static double prevRightWheelSpeed, currRightWheelSpeed;
+    static double LeftIntegral = 0, LeftDerivative = 0, LeftProportional;
+    static double RightIntegral = 0, RightDerivative = 0, RightProportional;
+    static const double P = 0.1, I = 0.2, D = 1.0;
+
+    prevLeftWheelSpeed = currLeftWheelSpeed;
+    prevRightWheelSpeed = currRightWheelSpeed;
+
+    currLeftWheelSpeed = LeftEncoder_Ticks * (0.3427) / 0.2;
+    currRightWheelSpeed = RightEncoder_Ticks * (0.3427) / 0.2;
+
+    LeftProportional = P * (IdealLeftWheelSpeed - currLeftWheelSpeed);
+    RightProportional = P * (IdealRightWheelSpeed - currRightWheelSpeed);
+
+    LeftDerivative = D * (currLeftWheelSpeed - prevLeftWheelSpeed);
+    RightDerivative = D *  (currRightWheelSpeed - prevRightWheelSpeed);
+
+    LeftIntegral += I * (IdealLeftWheelSpeed - currLeftWheelSpeed);
+    RightIntegral += I * (IdealRightWheelSpeed - currRightWheelSpeed);
+
+    if(LeftIntegral > 50)
+        LeftIntegral = 50;
+    else if (LeftIntegral < -50)
+        LeftIntegral = -50;
+
+    if(RightIntegral > 20)
+        RightIntegral = 20;
+    else if (RightIntegral < -20)
+        RightIntegral = -20;
+
+    LeftWheelPercent += (LeftProportional - LeftDerivative + LeftIntegral);
+    RightWheelPercent += (RightProportional - RightDerivative + RightIntegral);
 }
