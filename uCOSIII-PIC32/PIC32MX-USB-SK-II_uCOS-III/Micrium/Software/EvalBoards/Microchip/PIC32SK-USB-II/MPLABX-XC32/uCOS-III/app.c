@@ -44,10 +44,92 @@
 *                                                Defines
 *********************************************************************************************************
 */
+#define TASK_STK_SIZE                           256
 
-#define APP_CFG_TASK_ENCODER_STK_SIZE           256u
+
+#define APP_CFG_TASK_ENCODER_STK_SIZE           TASK_STK_SIZE
 #define APP_CFG_TASK_ENCODER_PRIO               5u      // 0 = lowest prio, 10 = highest
-#define APP_CFG_TASK_ENCODER_STK_SIZE_LIMIT     256u
+#define APP_CFG_TASK_ENCODER_STK_SIZE_LIMIT     TASK_STK_SIZE - 32
+
+#define APP_CFG_TASK_IMU_STK_SIZE               TASK_STK_SIZE
+#define APP_CFG_TASK_IMU_PRIO                   4u
+#define APP_CFG_TASK_IMU_STK_SIZE_LIMIT         TASK_STK_SIZE - 32
+
+//GY-80 Defines
+enum ADXL345_MAP
+{
+    ADXL345_DEVID          = 0x00,
+    ADXL345_THRESH_TAP     = 0x1D,
+    ADXL345_OFSX           = 0x1E,
+    ADXL345_OFSY           = 0x1F,
+    ADXL345_OFSZ           = 0x20,
+    ADXL345_DUR            = 0x21,
+    ADXL345_Latent         = 0x22,
+    ADXL345_Window         = 0x23,
+    ADXL345_THRESH_ACT     = 0x24,
+    ADXL345_THRESH_INACT   = 0x25,
+    ADXL345_TIME_INACT     = 0x26,
+    ADXL345_ACT_INACT_CTL  = 0x27,
+    ADXL345_THRESH_FF      = 0x28,
+    ADXL345_TIME_FF        = 0x29,
+    ADXL345_TAP_AXES       = 0x2A,
+    ADXL345_ACT_TAP_STATUS = 0x2B,
+    ADXL345_BW_RATE        = 0x2C,
+    ADXL345_POWER_CTL      = 0x2D,
+    ADXL345_INT_ENABLE     = 0x2E,
+    ADXL345_INT_MAP        = 0x2F,
+    ADXL345_INT_SOURCE     = 0x30,
+    ADXL345_DATA_FORMAT    = 0x31,
+    ADXL345_DATAX0         = 0x32,
+    ADXL345_DATAX1         = 0x33,
+    ADXL345_DATAY0         = 0x34,
+    ADXL345_DATAY1         = 0x35,
+    ADXL345_DATAZ0         = 0x36,
+    ADXL345_DATAZ1         = 0x37,
+    ADXL345_FIFO_CTL       = 0x38,
+    ADXL345_FIFO_STATUS    = 0x39,
+    ADXL345_ADDRESS        = 0xA7
+};
+
+enum HMC5883_MAP
+{
+    //register addresses
+    HMC5883_CONFIGA         = 0x00,
+    HMC5883_CONFIGB         = 0x01,
+    HMC5883_MODEREG         = 0x02,
+    HMC5883_DATABEGIN       = 0x03,
+    HMC5883_ADDRESS         = 0x3D,
+    //config options
+    HMC5883_CONTINUOUS      = 0x00,
+    HMC5883_SINGLEREAD      = 0x01,
+    HMC5883_IDLE            = 0x03
+};
+
+struct ADXL345
+{
+    unsigned char DATAX0;
+    unsigned char DATAX1;
+    unsigned char DATAY0;
+    unsigned char DATAY1;
+    unsigned char DATAZ0;
+    unsigned char DATAZ1;
+    CPU_INT16S DATAX;
+    CPU_INT16S DATAY;
+    CPU_INT16S DATAZ;
+};
+
+struct HMC5883
+{
+    unsigned char DATAX0;
+    unsigned char DATAX1;
+    unsigned char DATAY0;
+    unsigned char DATAY1;
+    unsigned char DATAZ0;
+    unsigned char DATAZ1;
+    CPU_INT16S DATAX;
+    CPU_INT16S DATAY;
+    CPU_INT16S DATAZ;
+};
 /*
 *********************************************************************************************************
 *                                                VARIABLES
@@ -59,6 +141,23 @@ static  CPU_STK   App_TaskStartStk[APP_CFG_TASK_START_STK_SIZE];
 
 static  OS_TCB    App_TaskEncoderTCB;
 static  CPU_STK   App_TaskEncoderStk[APP_CFG_TASK_ENCODER_STK_SIZE];
+
+static  OS_TCB    App_TaskIMUTCB;
+static  CPU_STK   App_TaskIMUStk[APP_CFG_TASK_IMU_STK_SIZE];
+
+
+
+CPU_INT16U LeftEncoder_State;
+CPU_INT16U RightEncoder_State;
+CPU_INT16U LeftEncoder_Ticks;
+CPU_INT16U RightEncoder_Ticks;
+static CPU_INT16S LeftWheelPercent;
+static CPU_INT16S RightWheelPercent;
+static CPU_INT16U IdealLeftWheelSpeed;
+static CPU_INT16U IdealRightWheelSpeed;
+
+struct ADXL345 Accelerometer;
+struct HMC5883 Compass;
 
 
 /*
@@ -72,10 +171,25 @@ static  void  App_ObjCreate   (void);
 
 static  void  App_TaskStart   (void  *p_arg);
 static  void  App_TaskEncoder(void * data);
+static  void  App_TaskIMUUpdate(void * imudata);
 
-void CN_Int_Init();
-void PWM_Module_Init();
-void AdjustPWM();
+void CN_Int_Init(void);
+void PWM_Module_Init(void);
+void Init_GY_80(void);
+struct ADXL345 ReadADXL345(void);
+struct HMC5883 ReadHMC5883(void);
+void AdjustPWM(void);
+
+//I2C Prototypes
+unsigned char mReadByteI2C1(unsigned char ack);
+unsigned char mWriteByteI2C1(unsigned char DOUT);
+void mStopI2C1(void);
+void mNackI2C1(void);
+void mAckI2C1(void);
+void mRestartI2C1(void);
+void mStartI2C1(void);
+void mIdleI2C1(void);
+
 
 /*
 *********************************************************************************************************
@@ -92,7 +206,6 @@ int  main (void)
     OS_ERR   os_err;
 
     CPU_Init();                                                           /* Initialize the uC/CPU services                           */
-    CN_Int_Init();
     BSP_IntDisAll();
 
     OSInit(&os_err);                                                      /* Init uC/OS-III.                                          */
@@ -137,7 +250,8 @@ static  void  App_TaskStart (void *p_arg)
     (void)p_arg;
 
     BSP_InitIO();                                               /* Initialize BSP functions                             */
-
+    CN_Int_Init();
+    PWM_Module_Init();
     Mem_Init();                                                 /* Initialize memory managment module                   */
     Math_Init();                                                /* Initialize mathematical module                       */
 
@@ -201,7 +315,7 @@ static  void  App_TaskCreate (void)
              (void        *)0,
              (OS_OPT       )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
              (OS_ERR      *)&os_err);
-    
+
     if(os_err != OS_ERR_NONE)
     {
         //oops there was an error starting this task
@@ -209,6 +323,24 @@ static  void  App_TaskCreate (void)
 
     //create RF Communication task
     //create IMU Update task
+        OSTaskCreate((OS_TCB      *)&App_TaskIMUTCB,                        /* Create the start task                                    */
+             (CPU_CHAR    *)"IMU",
+             (OS_TASK_PTR  )App_TaskIMUUpdate,
+             (void        *)0,
+             (OS_PRIO      )APP_CFG_TASK_IMU_PRIO,
+             (CPU_STK     *)&App_TaskIMUStk[0],
+             (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE_LIMIT,
+             (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE,
+             (OS_MSG_QTY   )0u,
+             (OS_TICK      )0u,
+             (void        *)0,
+             (OS_OPT       )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+             (OS_ERR      *)&os_err);
+
+    if(os_err != OS_ERR_NONE)
+    {
+        //oops there was an error starting this task
+    }
     //create Ultrasonic Read task
 
     
@@ -246,25 +378,62 @@ void CN_Int_Init()
 
 void PWM_Module_Init()
 {
-    // Test of PWM mode
+   // Test of PWM mode
 
     OC1CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
     OC2CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
-    OC3CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
-    OC4CON = 0x8000 | 0x06;  // ON, Timer 2 source, PWM fault disabled
 
-    T2CON = 0x8000 | 0x00;  //ON, 1:1 prescalar
+    T2CON = 0x8000 | 0x50;  //ON, 1:32 prescale @72 MHz FPB = 2.25 MHz, T=444.444ns
 
-    PR2 =    225;   // Set PWM period: 225*444.444ns = 100 us, f = 10 KHz
+    PR2 =    2250;   // Set PWM period: 225*444.444ns = 100 us, T = 10 KHz
+                               // PR2 = 2250 is 1000 Hz, T = 1 ms
+                               // PR2 = 22,500 is 100 Hz, T = 10 ms
 
-    OC1RS = (PR2 * LeftWheelPercent)/100;  // set PWM on time out of PR2 period
-    OC2RS = (PR2 * RightWheelPercent)/100;  // set pwm on time
+    int percent1 = 0;
+    int percent2 = 0;
+    OC1RS = (PR2 * percent1)/100 ;  // set PWM on time out of PR2 period
+    OC2RS = (PR2 * percent2)/100;  // set pwm on time
+
+}
+
+void Init_GY_80(void)
+{
+    //Initialize I2C module 1
+    I2C1BRG = 388; //set baud rate generator so we get 100KHz
+    I2C1CONbits.DISSLW = 1; // disable slew rate
+    I2C1CONbits.ON = 1; //enable I2C module, configure pins for serial op
+
+    //now that the I2C Module is open we can set up the ADXL345
+    mIdleI2C1();
+    mStartI2C1();
+    mWriteByteI2C1(ADXL345_ADDRESS & 0xFE);  //send a ADDR + W
+    mIdleI2C1();
+    mWriteByteI2C1(ADXL345_POWER_CTL);
+    mIdleI2C1();
+    mWriteByteI2C1(0x08);
+    mIdleI2C1();
+    mStopI2C1();
+
+    //now set up the HMC5883
+    mIdleI2C1();
+    mStartI2C1();
+    mWriteByteI2C1(HMC5883_ADDRESS & 0xFE);
+    mIdleI2C1();
+    mWriteByteI2C1(HMC5883_MODEREG);
+    mIdleI2C1();
+    mWriteByteI2C1(0x00);
+    mIdleI2C1();
+    mStopI2C1();
+    
+
+
 }
 
 static void App_TaskEncoder(void * data)
 {
     OS_ERR err;
-    PWM_Module_Init();
+    IdealLeftWheelSpeed = 6;
+    IdealRightWheelSpeed = 6;
     while(1)
     {
         //compare the LeftEncoder_Ticks to RightEncoder_Ticks
@@ -275,24 +444,26 @@ static void App_TaskEncoder(void * data)
         //have valid data in these global tick counters
         LeftEncoder_Ticks = 0;
         RightEncoder_Ticks = 0;
-        OSTimeDlyHMSM(0, 0, 0, 200,OS_OPT_TIME_HMSM_STRICT,&err);
+        OSTimeDlyHMSM(0, 0, 0, 600,OS_OPT_TIME_HMSM_STRICT,&err);
+        if(err != 0)
+            err = 0;
     }
 }
 
 //employ simple PID controls
-void AdjustPWM()
+void AdjustPWM(void)
 {
     static double prevLeftWheelSpeed, currLeftWheelSpeed;
     static double prevRightWheelSpeed, currRightWheelSpeed;
     static double LeftIntegral = 0, LeftDerivative = 0, LeftProportional;
     static double RightIntegral = 0, RightDerivative = 0, RightProportional;
-    static const double P = 0.1, I = 0.2, D = 1.0;
+    static const double P = 4, I = 2, D = 4;
 
     prevLeftWheelSpeed = currLeftWheelSpeed;
     prevRightWheelSpeed = currRightWheelSpeed;
 
-    currLeftWheelSpeed = LeftEncoder_Ticks * (0.3427) / 0.2;
-    currRightWheelSpeed = RightEncoder_Ticks * (0.3427) / 0.2;
+    currLeftWheelSpeed = LeftEncoder_Ticks * (0.3427) / 0.6;
+    currRightWheelSpeed = RightEncoder_Ticks * (0.3427) / 0.6;
 
     LeftProportional = P * (IdealLeftWheelSpeed - currLeftWheelSpeed);
     RightProportional = P * (IdealRightWheelSpeed - currRightWheelSpeed);
@@ -303,16 +474,181 @@ void AdjustPWM()
     LeftIntegral += I * (IdealLeftWheelSpeed - currLeftWheelSpeed);
     RightIntegral += I * (IdealRightWheelSpeed - currRightWheelSpeed);
 
-    if(LeftIntegral > 50)
-        LeftIntegral = 50;
-    else if (LeftIntegral < -50)
-        LeftIntegral = -50;
+    if(LeftIntegral > 100)
+        LeftIntegral = 100;
+    else if (LeftIntegral < -100)
+        LeftIntegral = -100;
 
-    if(RightIntegral > 20)
-        RightIntegral = 20;
-    else if (RightIntegral < -20)
-        RightIntegral = -20;
+    if(RightIntegral > 100)
+        RightIntegral = 100;
+    else if (RightIntegral < -100)
+        RightIntegral = -100;
 
     LeftWheelPercent += (LeftProportional - LeftDerivative + LeftIntegral);
     RightWheelPercent += (RightProportional - RightDerivative + RightIntegral);
+    if(LeftWheelPercent > 100)
+        LeftWheelPercent = 100;
+    else if (LeftWheelPercent < 0)
+        LeftWheelPercent = 0;
+    
+    if(RightWheelPercent > 100)
+        RightWheelPercent = 100;
+    else if (RightWheelPercent < 0)
+        RightWheelPercent = 0;
+    
+    OC1RS = (PR2 * RightWheelPercent)/100 ;  // set PWM on time out of PR2 period
+    OC2RS = (PR2 * LeftWheelPercent)/100;  // set pwm on time
+}
+
+static void App_TaskIMUUpdate(void * imudata)
+{
+    OS_ERR err;
+    Init_GY_80();
+    while(1)
+    {
+        //Read the ADXL345
+        Accelerometer = ReadADXL345();
+        //Read the HMC5883
+        Compass = ReadHMC5883();
+        OSTimeDlyHMSM(0, 0, 0, 200,OS_OPT_TIME_HMSM_STRICT,&err);
+    }
+}
+void mIdleI2C1(void)
+{
+    //Wait for Acken, Rcen, Pen, Rsen and Sen to clear
+    while((I2C1CON&0x001F)!=0){}
+
+}
+
+void mStartI2C1(void)
+{
+    I2C1CONbits.SEN=1;
+    while(I2C1CONbits.SEN){}
+}
+
+void mRestartI2C1(void)
+{
+    I2C1CONbits.RSEN=1;
+    while(I2C1CONbits.RSEN){}
+}
+
+void mAckI2C1(void)
+{
+    I2C1CONbits.ACKDT=0;
+    I2C1CONbits.ACKEN=1;
+    while(I2C1CONbits.ACKEN){}
+}
+
+void mNackI2C1(void)
+{
+    I2C1CONbits.ACKDT=1;
+    I2C1CONbits.ACKEN=1;
+    while(I2C1CONbits.ACKEN){}
+}
+
+void mStopI2C1(void)
+{
+    I2C1CONbits.PEN=1;
+    while(I2C1CONbits.PEN){}
+}
+
+unsigned char mWriteByteI2C1(unsigned char DOUT)
+{
+    //Load data into transmit register
+    I2C1TRN=DOUT;
+    while(I2C1STATbits.TRSTAT){};
+    //Recover Ack/Nack
+    if(I2C1STATbits.ACKSTAT==1)
+        return(1);
+    else
+        return(0);
+    //returne 1 for acked, 0 for nacked
+}
+
+unsigned char mReadByteI2C1(unsigned char ack)
+{
+    unsigned char temp;
+    I2C1CONbits.RCEN=1;
+    while(I2C1CONbits.RCEN){}
+    temp = I2C1RCV;
+    //Reception is started, send ack/nack after read
+
+    if(ack==0)
+        mNackI2C1();
+    else
+        mAckI2C1();
+    //Reception should be complete - pull out data
+    return temp;
+}
+
+struct ADXL345 ReadADXL345(void)
+{
+    struct ADXL345 temp;
+    //now that the I2C Module is open we can set up the ADXL345
+    mIdleI2C1();
+    mStartI2C1();
+    mWriteByteI2C1(ADXL345_ADDRESS & 0xFE);  //send a ADDR + W
+    mIdleI2C1();
+    mWriteByteI2C1(ADXL345_DATAX0);
+    mIdleI2C1();
+    mStopI2C1();
+    mIdleI2C1();
+
+    mStartI2C1();
+    mWriteByteI2C1(ADXL345_ADDRESS);    //send a ADDR + R
+    mIdleI2C1();
+    temp.DATAX0 = mReadByteI2C1(1); //ack after receipt
+    mIdleI2C1();
+    temp.DATAX1 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAY0 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAY1 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAZ0 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAZ1 = mReadByteI2C1(0);
+    mStopI2C1();
+
+    temp.DATAX = (temp.DATAX1 << 8) | temp.DATAX0;
+    temp.DATAY = (temp.DATAY1 << 8) | temp.DATAY0;
+    temp.DATAZ = (temp.DATAZ1 << 8) | temp.DATAZ0;
+
+    return temp;
+}
+
+struct HMC5883 ReadHMC5883(void)
+{
+    struct HMC5883 temp;
+    //now that the I2C Module is open we can set up the ADXL345
+    mIdleI2C1();
+    mStartI2C1();
+    mWriteByteI2C1(HMC5883_ADDRESS & 0xFE);  //send a ADDR + W
+    mIdleI2C1();
+    mWriteByteI2C1(HMC5883_DATABEGIN);
+    mIdleI2C1();
+    mStopI2C1();
+    mIdleI2C1();
+
+    mStartI2C1();
+    mWriteByteI2C1(HMC5883_ADDRESS);    //send a ADDR + R
+    mIdleI2C1();
+    temp.DATAX0 = mReadByteI2C1(1); //ack after receipt
+    mIdleI2C1();
+    temp.DATAX1 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAY0 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAY1 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAZ0 = mReadByteI2C1(1);
+    mIdleI2C1();
+    temp.DATAZ1 = mReadByteI2C1(0);
+    mStopI2C1();
+
+    temp.DATAX = (temp.DATAX0 << 8) | temp.DATAX1;
+    temp.DATAY = (temp.DATAY0 << 8) | temp.DATAY1;
+    temp.DATAZ = (temp.DATAZ0 << 8) | temp.DATAZ1;
+
+    return temp;
 }

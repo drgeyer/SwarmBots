@@ -43,7 +43,10 @@
 *********************************************************************************************************
  */
 /* Exercise 4, #7: Add code here */
-
+extern CPU_INT16U LeftEncoder_Ticks;
+extern CPU_INT16U RightEncoder_Ticks;
+extern CPU_INT16U LeftEncoder_State;
+extern CPU_INT16U RightEncoder_State;
 /*
 *********************************************************************************************************
 *                                               CONSTANTS
