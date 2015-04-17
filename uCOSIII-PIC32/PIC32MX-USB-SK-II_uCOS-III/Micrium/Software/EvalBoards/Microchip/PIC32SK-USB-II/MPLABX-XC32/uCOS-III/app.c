@@ -55,6 +55,10 @@
 #define APP_CFG_TASK_IMU_PRIO                   4u
 #define APP_CFG_TASK_IMU_STK_SIZE_LIMIT         TASK_STK_SIZE - 32
 
+#define APP_CFG_TASK_XBEE_STK_SIZE              TASK_STK_SIZE
+#define APP_CFG_TASK_XBEE_PRIO                  3u
+#define APP_CFG_TASK_XBEE_STK_SIZE_LIMIT        TASK_STK_SIZE - 32
+
 //GY-80 Defines
 enum ADXL345_MAP
 {
@@ -93,12 +97,22 @@ enum ADXL345_MAP
 
 enum HMC5883_MAP
 {
-    //register addresses
-    HMC5883_CONFIGA         = 0x00,
-    HMC5883_CONFIGB         = 0x01,
-    HMC5883_MODEREG         = 0x02,
-    HMC5883_DATABEGIN       = 0x03,
-    HMC5883_ADDRESS         = 0x3D,
+    HMC5883_CRA_REG_M             = 0x00,
+    HMC5883_CRB_REG_M             = 0x01,
+    HMC5883_MR_REG_M              = 0x02,
+    HMC5883_OUT_X_H_M             = 0x03,
+    HMC5883_OUT_X_L_M             = 0x04,
+    HMC5883_OUT_Z_H_M             = 0x05,
+    HMC5883_OUT_Z_L_M             = 0x06,
+    HMC5883_OUT_Y_H_M             = 0x07,
+    HMC5883_OUT_Y_L_M             = 0x08,
+    HMC5883_SR_REG_Mg             = 0x09,
+    HMC5883_IRA_REG_M             = 0x0A,
+    HMC5883_IRB_REG_M             = 0x0B,
+    HMC5883_IRC_REG_M             = 0x0C,
+    HMC5883_TEMP_OUT_H_M          = 0x31,
+    HMC5883_TEMP_OUT_L_M          = 0x32,
+    HMC5883_ADDRESS               = 0x3D,
     //config options
     HMC5883_CONTINUOUS      = 0x00,
     HMC5883_SINGLEREAD      = 0x01,
@@ -129,6 +143,7 @@ struct HMC5883
     CPU_INT16S DATAX;
     CPU_INT16S DATAY;
     CPU_INT16S DATAZ;
+    CPU_INT16S HEADING;
 };
 /*
 *********************************************************************************************************
@@ -145,6 +160,9 @@ static  CPU_STK   App_TaskEncoderStk[APP_CFG_TASK_ENCODER_STK_SIZE];
 static  OS_TCB    App_TaskIMUTCB;
 static  CPU_STK   App_TaskIMUStk[APP_CFG_TASK_IMU_STK_SIZE];
 
+static  OS_TCB    App_TaskXBeeTCB;
+static  CPU_STK   App_TaskXBeeStk[APP_CFG_TASK_IMU_STK_SIZE];
+
 
 
 CPU_INT16U LeftEncoder_State;
@@ -155,9 +173,14 @@ static CPU_INT16S LeftWheelPercent;
 static CPU_INT16S RightWheelPercent;
 static CPU_INT16U IdealLeftWheelSpeed;
 static CPU_INT16U IdealRightWheelSpeed;
+unsigned char rx_Buffer[265];
+CPU_INT16U rx_Buffer_index = 0;
 
 struct ADXL345 Accelerometer;
 struct HMC5883 Compass;
+//for a Mag Gain of 1.3
+CPU_INT16S Gauss_LSB_XY = 1100;
+CPU_INT16S Gauss_LSB_Z  = 980;
 
 
 /*
@@ -172,6 +195,7 @@ static  void  App_ObjCreate   (void);
 static  void  App_TaskStart   (void  *p_arg);
 static  void  App_TaskEncoder(void * data);
 static  void  App_TaskIMUUpdate(void * imudata);
+static void App_TaskXBeeUpdate(void * xbeedata);
 
 void CN_Int_Init(void);
 void PWM_Module_Init(void);
@@ -179,6 +203,8 @@ void Init_GY_80(void);
 struct ADXL345 ReadADXL345(void);
 struct HMC5883 ReadHMC5883(void);
 void AdjustPWM(void);
+void U2WriteByte(unsigned char byte);
+void U2XBeeTransmit(void);
 
 //I2C Prototypes
 unsigned char mReadByteI2C1(unsigned char ack);
@@ -322,20 +348,38 @@ static  void  App_TaskCreate (void)
     }
 
     //create RF Communication task
+    OSTaskCreate((OS_TCB      *)&App_TaskIMUTCB,                        /* Create the start task                                    */
+     (CPU_CHAR    *)"IMU",
+     (OS_TASK_PTR  )App_TaskIMUUpdate,
+     (void        *)0,
+     (OS_PRIO      )APP_CFG_TASK_IMU_PRIO,
+     (CPU_STK     *)&App_TaskIMUStk[0],
+     (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE_LIMIT,
+     (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE,
+     (OS_MSG_QTY   )0u,
+     (OS_TICK      )0u,
+     (void        *)0,
+     (OS_OPT       )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+     (OS_ERR      *)&os_err);
+
+    if(os_err != OS_ERR_NONE)
+    {
+        //oops there was an error starting this task
+    }
     //create IMU Update task
-        OSTaskCreate((OS_TCB      *)&App_TaskIMUTCB,                        /* Create the start task                                    */
-             (CPU_CHAR    *)"IMU",
-             (OS_TASK_PTR  )App_TaskIMUUpdate,
-             (void        *)0,
-             (OS_PRIO      )APP_CFG_TASK_IMU_PRIO,
-             (CPU_STK     *)&App_TaskIMUStk[0],
-             (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE_LIMIT,
-             (CPU_STK_SIZE )APP_CFG_TASK_IMU_STK_SIZE,
-             (OS_MSG_QTY   )0u,
-             (OS_TICK      )0u,
-             (void        *)0,
-             (OS_OPT       )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
-             (OS_ERR      *)&os_err);
+    OSTaskCreate((OS_TCB      *)&App_TaskXBeeTCB,                        /* Create the start task                                    */
+         (CPU_CHAR    *)"XBee",
+         (OS_TASK_PTR  )App_TaskXBeeUpdate,
+         (void        *)0,
+         (OS_PRIO      )APP_CFG_TASK_XBEE_PRIO,
+         (CPU_STK     *)&App_TaskXBeeStk[0],
+         (CPU_STK_SIZE )APP_CFG_TASK_XBEE_STK_SIZE_LIMIT,
+         (CPU_STK_SIZE )APP_CFG_TASK_XBEE_STK_SIZE,
+         (OS_MSG_QTY   )0u,
+         (OS_TICK      )0u,
+         (void        *)0,
+         (OS_OPT       )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+         (OS_ERR      *)&os_err);
 
     if(os_err != OS_ERR_NONE)
     {
@@ -414,18 +458,46 @@ void Init_GY_80(void)
     mIdleI2C1();
     mStopI2C1();
 
-    //now set up the HMC5883
+    //now set up the HMC5883 to read continuously
     mIdleI2C1();
     mStartI2C1();
     mWriteByteI2C1(HMC5883_ADDRESS & 0xFE);
     mIdleI2C1();
-    mWriteByteI2C1(HMC5883_MODEREG);
+    mWriteByteI2C1(HMC5883_MR_REG_M);
     mIdleI2C1();
     mWriteByteI2C1(0x00);
     mIdleI2C1();
     mStopI2C1();
-    
 
+    //now set the gain to a known value
+    mIdleI2C1();
+    mStartI2C1();
+    mWriteByteI2C1(HMC5883_ADDRESS & 0xFE);
+    mIdleI2C1();
+    mWriteByteI2C1(HMC5883_CRB_REG_M);
+    mIdleI2C1();
+    mWriteByteI2C1(0x20);   //Set MAGGAIN to +/- 1.3 Ga
+    mIdleI2C1();
+    mStopI2C1();
+}
+
+void initUART(void)
+{
+    TRISFbits.TRISF4 = 1;
+    TRISFbits.TRISF5 = 0;
+    U2MODE = 0x8008;
+    U2STA = 0x1601;
+    U2BRG = FPB / (7 *  9600) - 1;
+
+    //clear UART interrupt flags
+    IFS1bits.U2RXIF = 0;
+    IFS1bits.U2EIF = 0;
+    //set priority for interrupt vector
+    IPC8bits.U2IP = 1;
+    IPC8bits.U2IS = 1;
+    //now enable the UART interrupts
+    IEC1bits.U2RXIE = 1;
+    IEC1bits.U2EIE = 1;
 
 }
 
@@ -511,6 +583,8 @@ static void App_TaskIMUUpdate(void * imudata)
         //Read the HMC5883
         Compass = ReadHMC5883();
         OSTimeDlyHMSM(0, 0, 0, 200,OS_OPT_TIME_HMSM_STRICT,&err);
+        if (err != 0)
+            err = 0;
     }
 }
 void mIdleI2C1(void)
@@ -625,7 +699,7 @@ struct HMC5883 ReadHMC5883(void)
     mStartI2C1();
     mWriteByteI2C1(HMC5883_ADDRESS & 0xFE);  //send a ADDR + W
     mIdleI2C1();
-    mWriteByteI2C1(HMC5883_DATABEGIN);
+    mWriteByteI2C1(HMC5883_OUT_X_H_M);
     mIdleI2C1();
     mStopI2C1();
     mIdleI2C1();
@@ -650,5 +724,65 @@ struct HMC5883 ReadHMC5883(void)
     temp.DATAY = (temp.DATAY0 << 8) | temp.DATAY1;
     temp.DATAZ = (temp.DATAZ0 << 8) | temp.DATAZ1;
 
+    //now calculate the heading from these values
+    float heading = atan(temp.DATAY / (float)temp.DATAX);
+    float declination_angle = 0.13;
+    heading += declination_angle;
+
+    if(heading < 0)
+        heading += (2*3.141592);
+
+    if(heading > 2*3.141592)
+        heading -= 2 * (3.141592);
+
+    //convert radians to degrees for readability
+    temp.HEADING = (heading * 180.0 / 3.141592);
+    
     return temp;
+}
+
+static void App_TaskXBeeUpdate(void * xbeedata)
+{
+    OS_ERR err;
+
+    initUART();
+    while(1)
+    {
+        //ok send our heading, speed out over UART to XBee
+        U2XBeeTransmit();
+        //
+        OSTimeDlyHMSM(0, 0, 0, 20,OS_OPT_TIME_HMSM_STRICT,&err);
+        if (err != 0)
+            err = 0;
+    }
+}
+
+void U2WriteByte(unsigned char byte)
+{
+    while(U2STAbits.UTXBF == 1){};
+    U2TXREG = byte;
+}
+
+void U2XBeeTransmit()
+{
+    OS_ERR err;
+    OS_OPT opt;
+    OSSchedLock(&err);
+
+    //write the Compass Data and Speed Data
+    U2WriteByte(Compass.HEADING & 0xFF);
+    U2WriteByte((Compass.HEADING & 0xFF00) >> 8);
+    U2WriteByte(((IdealLeftWheelSpeed + IdealRightWheelSpeed)/2) & 0xFF);
+    U2WriteByte('+');
+    U2WriteByte('+');
+    U2WriteByte('+');
+    //Write the send sequence
+//    U2WriteByte(0x03);
+//    U2WriteByte(0xE8); //GT
+//    OSTimeDly(1, opt, &err);
+//    U2WriteByte(0x2B); //CC
+//    OSTimeDly(1, opt, &err);
+//    U2WriteByte(0x03);
+//    U2WriteByte(0xE8); //GT
+    OSSchedUnlock(&err);
 }

@@ -47,6 +47,8 @@ extern CPU_INT16U LeftEncoder_Ticks;
 extern CPU_INT16U RightEncoder_Ticks;
 extern CPU_INT16U LeftEncoder_State;
 extern CPU_INT16U RightEncoder_State;
+extern unsigned char rx_Buffer[256];
+extern CPU_INT16U rx_Buffer_index;
 /*
 *********************************************************************************************************
 *                                               CONSTANTS
@@ -274,6 +276,14 @@ void  BSP_Except_Handler (void)
 
 void  BSP_DefaultHandler (void)
 {
+    while(mU2RXGetIntFlag())
+    {
+        rx_Buffer[rx_Buffer_index++] = U2RXREG;
+        if(rx_Buffer_index >= 256)
+            rx_Buffer_index = 0;
+        mU2RXClearIntFlag();
+    }
+    
     //This is where we end up when an encoder interrupts
     if(LeftEncoder_State != PORTCbits.RC14) //if the state change was on CN0 then
     {
@@ -299,6 +309,8 @@ void  BSP_DefaultHandler (void)
         dummy = PORTG;
     }
     mCNClearIntFlag(); //will only clear the flag if the pin that caused the interrupt has been read by the user.
+
+
 }
 
 /*

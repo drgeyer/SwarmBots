@@ -16,6 +16,7 @@
 #include    <stdlib.h>
 #include    <string.h>
 #include    <ctype.h>
+#include    <math.h>
 
 #include    <app_cfg.h>
 #include    <cpu.h>
